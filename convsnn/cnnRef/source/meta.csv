@@ -1,0 +1,30 @@
+Test Name,it#1@1,
+Mode,Sampling,
+Speed,Fast,
+Interval,0.01,
+Hold Time,0,
+Site Coordinate,0,0,
+Last Executed,06/15/2026 00:09:50,
+KTEI Version,V9.1,
+Execution Time,00:00:01:16,
+Interlock,High Voltage Enabled,
+Device Terminal,B,A
+Instrument,GNDU,SMU1
+Name,N/A,AV
+Forcing Function,Common,Voltage Bias
+Level,0,-5
+Number of Points,N/A,4096
+Compliance,N/A,0.1
+Measure I,N/A,Measured
+Measure V,N/A,No
+Range I,N/A,Limited Auto=100pA
+Range V,N/A,Best Fixed
+Range C,N/A,N/A
+Dual Sweep Mode,N/A,N/A
+Pulse Mode,N/A,Disabled
+Hold,N/A,N/A
+Frequency,N/A,N/A
+Frequency 2,N/A,N/A
+Number of Pts.,N/A,N/A
+AC Voltage,N/A,N/A
+Over Voltage Setting,N/A,OFF

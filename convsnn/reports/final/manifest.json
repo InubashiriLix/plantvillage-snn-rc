@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "current_artifact_root": "convsnn/artifacts/hardware_refresh_2026-08-06",
+  "source_metrics": {
+    "all38_ideal": "convsnn/artifacts/hardware_refresh_2026-08-06/retained/all38/metrics.json",
+    "all38_hw": "convsnn/artifacts/hardware_refresh_2026-08-06/final/conv_snn_all38_hw_finetune_seed42/metrics.json",
+    "top10_ideal": "convsnn/artifacts/hardware_refresh_2026-08-06/final/conv_snn_top10_ideal_seed42/metrics.json",
+    "top10_hw": "convsnn/artifacts/hardware_refresh_2026-08-06/final/conv_snn_top10_hw_finetune_seed42/metrics.json"
+  },
+  "figures": [
+    "01_dataset_examples_38.jpg",
+    "02_class_distribution.png",
+    "03_convsnn_architecture.png",
+    "04_lif_and_experiment_pipeline.png",
+    "05_epoch_accuracy_loss.png",
+    "06_final_result_summary.png",
+    "07_top10_per_class_recall.png",
+    "08_all38_per_class_recall.png",
+    "09_top10_confusion_matrix.png",
+    "10_device_mapping.png",
+    "11_temporal_and_activity.png",
+    "12_best_worst_samples.png"
+  ],
+  "report": "PlantVillage_ConvSNN_Final.zh-CN.md",
+  "pdf": "PlantVillage_ConvSNN_Final.zh-CN.pdf"
+}

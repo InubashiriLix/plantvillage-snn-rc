@@ -1,0 +1,34 @@
+[project]
+name = "plantvillage-hw-snn"
+version = "2.0.0"
+description = "Reproducible ideal and memristor-aware PlantVillage SNN experiments"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "matplotlib",
+  "pandas",
+  "Pillow",
+  "scikit-learn",
+  "scipy",
+  "snntorch>=0.9",
+  "torch",
+  "torchvision",
+]
+
+[project.scripts]
+plantvillage-snn = "plantvillage_snn.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: end-to-end CPU smoke coverage"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+download = ["kagglehub"]
+
+[tool.setuptools.packages.find]
+include = ["plantvillage_snn*"]
