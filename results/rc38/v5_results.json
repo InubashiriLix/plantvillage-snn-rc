@@ -1,0 +1,32 @@
+{
+  "baseline_v4_validation_macro_recall": 0.7216786592450916,
+  "primary": {
+    "candidate": 2,
+    "encoding": "graded_q000",
+    "tau_max": 128.0,
+    "gamma": 2.0,
+    "weight_decay": 0.001,
+    "epochs": 46,
+    "internal_macro_recall": 0.7855433496464066,
+    "val_accuracy": 0.7990562780527103,
+    "val_macro_recall": 0.7722612422813007,
+    "val_predicted_class_count": 38,
+    "training_augmentation": "none"
+  },
+  "augmentation_trial": {
+    "enabled": true,
+    "val_accuracy": 0.7888134422833467,
+    "val_macro_recall": 0.7707558318415907,
+    "val_predicted_class_count": 38
+  },
+  "macro_recall_gain_over_v4": 0.050582583036209106,
+  "target_macro_recall": 0.8,
+  "reached_target": false,
+  "test_evaluated": false,
+  "training_device": "cuda",
+  "latency": {
+    "optical_frames": 64,
+    "electrical_reads": 64,
+    "feature_dimension": 9216
+  }
+}

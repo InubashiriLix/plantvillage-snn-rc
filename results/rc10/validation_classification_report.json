@@ -1,0 +1,75 @@
+{
+  "Blueberry___healthy": {
+    "precision": 0.9357429718875502,
+    "recall": 0.9708333333333333,
+    "f1-score": 0.9529652351738241,
+    "support": 240.0
+  },
+  "Cherry_(including_sour)___healthy": {
+    "precision": 0.88,
+    "recall": 0.9635036496350365,
+    "f1-score": 0.9198606271777003,
+    "support": 137.0
+  },
+  "Corn_(maize)___Common_rust_": {
+    "precision": 0.9792746113989638,
+    "recall": 0.9895287958115183,
+    "f1-score": 0.984375,
+    "support": 191.0
+  },
+  "Corn_(maize)___healthy": {
+    "precision": 0.9787234042553191,
+    "recall": 0.989247311827957,
+    "f1-score": 0.983957219251337,
+    "support": 186.0
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "precision": 0.9285714285714286,
+    "recall": 0.9825581395348837,
+    "f1-score": 0.9548022598870056,
+    "support": 172.0
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "precision": 0.9907940161104718,
+    "recall": 0.9772985244040863,
+    "f1-score": 0.984,
+    "support": 881.0
+  },
+  "Peach___healthy": {
+    "precision": 0.8923076923076924,
+    "recall": 1.0,
+    "f1-score": 0.943089430894309,
+    "support": 58.0
+  },
+  "Soybean___healthy": {
+    "precision": 0.9850931677018634,
+    "recall": 0.9742014742014742,
+    "f1-score": 0.9796170475602224,
+    "support": 814.0
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "precision": 0.9843561973525873,
+    "recall": 0.9544924154025671,
+    "f1-score": 0.9691943127962085,
+    "support": 857.0
+  },
+  "Tomato___healthy": {
+    "precision": 0.9806949806949807,
+    "recall": 0.996078431372549,
+    "f1-score": 0.9883268482490273,
+    "support": 255.0
+  },
+  "accuracy": 0.9736217356897916,
+  "macro avg": {
+    "precision": 0.9535558470280858,
+    "recall": 0.9797742075523406,
+    "f1-score": 0.9660187980989635,
+    "support": 3791.0
+  },
+  "weighted avg": {
+    "precision": 0.9744437607493708,
+    "recall": 0.9736217356897916,
+    "f1-score": 0.9737864824379108,
+    "support": 3791.0
+  }
+}

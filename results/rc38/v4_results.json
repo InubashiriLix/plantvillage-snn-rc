@@ -1,0 +1,86 @@
+{
+  "baseline_v3_validation_macro_recall": 0.6209266415318196,
+  "best_by_mode": {
+    "rgb_event_final": {
+      "mode": "rgb_event_final",
+      "channels": 9,
+      "quantile_tag": "q070",
+      "tau_max": 128.0,
+      "gamma": 0.5,
+      "ridge_alpha": 0.01,
+      "optical_frames": 64,
+      "read_count": 1,
+      "feature_dimension": 108,
+      "val_accuracy": 0.504891241799977,
+      "val_macro_recall": 0.5065130505168784,
+      "val_predicted_class_count": 38
+    },
+    "rgb_event_checkpoints": {
+      "mode": "rgb_event_checkpoints",
+      "channels": 9,
+      "quantile_tag": "q060",
+      "tau_max": 64.0,
+      "gamma": 1.0,
+      "ridge_alpha": 1.0,
+      "optical_frames": 64,
+      "read_count": 8,
+      "feature_dimension": 864,
+      "val_accuracy": 0.6385084589711129,
+      "val_macro_recall": 0.6324505566398573,
+      "val_predicted_class_count": 38
+    },
+    "all_columns_final": {
+      "mode": "all_columns_final",
+      "channels": 12,
+      "quantile_tag": "q080",
+      "tau_max": 128.0,
+      "gamma": 2.0,
+      "ridge_alpha": 1.0,
+      "optical_frames": 64,
+      "read_count": 1,
+      "feature_dimension": 144,
+      "val_accuracy": 0.6291863275405686,
+      "val_macro_recall": 0.6327175959621484,
+      "val_predicted_class_count": 38
+    },
+    "all_columns_checkpoints": {
+      "mode": "all_columns_checkpoints",
+      "channels": 12,
+      "quantile_tag": "q080",
+      "tau_max": 128.0,
+      "gamma": 2.0,
+      "ridge_alpha": 1.0,
+      "optical_frames": 64,
+      "read_count": 8,
+      "feature_dimension": 1152,
+      "val_accuracy": 0.7202209690413166,
+      "val_macro_recall": 0.7216786592450916,
+      "val_predicted_class_count": 38
+    }
+  },
+  "primary": {
+    "mode": "all_columns_checkpoints",
+    "channels": 12,
+    "quantile_tag": "q080",
+    "tau_max": 128.0,
+    "gamma": 2.0,
+    "ridge_alpha": 1.0,
+    "optical_frames": 64,
+    "read_count": 8,
+    "feature_dimension": 1152,
+    "val_accuracy": 0.7202209690413166,
+    "val_macro_recall": 0.7216786592450916,
+    "val_predicted_class_count": 38
+  },
+  "macro_recall_gain_over_v3": 0.10075201771327191,
+  "target_macro_recall": 0.8,
+  "reached_target": false,
+  "test_evaluated": false,
+  "training_device": "cuda",
+  "latency": {
+    "direct_pixel_frames": 4096,
+    "v4_optical_frames": 64,
+    "optical_frame_speedup": 64.0,
+    "checkpoint_reads": 8
+  }
+}

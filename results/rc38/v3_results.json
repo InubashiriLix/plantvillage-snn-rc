@@ -1,0 +1,49 @@
+{
+  "selected": {
+    "texture_tag": "q060",
+    "gap_steps": 0,
+    "ridge_alpha": 0.0001,
+    "val_accuracy": 0.6196340200253194,
+    "val_macro_recall": 0.6209266415318196,
+    "val_predicted_class_count": 38
+  },
+  "dynamics": {
+    "alpha_min": 0.0,
+    "alpha_max": 0.9,
+    "gamma": 0.5,
+    "mask_seed": 42,
+    "rgb_tag": "q060",
+    "carry_state": true
+  },
+  "feature_dimension": 216,
+  "ablations_validation": {
+    "rgb_only": {
+      "accuracy": 0.4918862930141558,
+      "macro_recall": 0.4925877943357165,
+      "predicted_class_count": 38
+    },
+    "texture_only": {
+      "accuracy": 0.32800092070433884,
+      "macro_recall": 0.3770169658261733,
+      "predicted_class_count": 37
+    },
+    "dual_reset": {
+      "accuracy": 0.6196340200253194,
+      "macro_recall": 0.6209266415318196,
+      "predicted_class_count": 38
+    },
+    "dual_carry": {
+      "accuracy": 0.6196340200253194,
+      "macro_recall": 0.6209266415318196,
+      "predicted_class_count": 38
+    }
+  },
+  "v2_validation_macro_recall": 0.4925877943357165,
+  "macro_recall_gain_over_v2": 0.12833884719610317,
+  "state_inheritance_note": "With both pass tails concatenated and a linear readout, carried and reset representations can be linearly equivalent under the Level-1 state equation.",
+  "stage_gate": 0.65,
+  "target_macro_recall": 0.8,
+  "passed_stage_gate": false,
+  "reached_target": false,
+  "test_evaluated": false
+}

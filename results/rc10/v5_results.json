@@ -1,0 +1,36 @@
+{
+  "primary": {
+    "candidate": 2,
+    "encoding": "graded_q000",
+    "tau_max": 256.0,
+    "gamma": 3.0,
+    "weight_decay": 0.0001,
+    "epochs": 18,
+    "internal_macro_recall": 0.9773320486690468,
+    "val_accuracy": 0.9736217356897916,
+    "val_macro_recall": 0.9797742075523406,
+    "val_predicted_class_count": 10,
+    "training_augmentation": "none"
+  },
+  "augmentation_trial": {
+    "enabled": true,
+    "val_accuracy": 0.9638617778950145,
+    "val_macro_recall": 0.9713987055824104,
+    "val_predicted_class_count": 10
+  },
+  "target_macro_recall": 0.8,
+  "reached_target": true,
+  "test_evaluated": true,
+  "training_device": "cuda",
+  "latency": {
+    "optical_frames": 64,
+    "electrical_reads": 64,
+    "feature_dimension": 9216
+  },
+  "test": {
+    "accuracy": 0.9702406078514141,
+    "macro_recall": 0.967980475748619,
+    "predicted_class_count": 10
+  },
+  "subset_note": "Metrics are for the configured class subset and are not directly comparable with the 38-class v4 baseline."
+}
