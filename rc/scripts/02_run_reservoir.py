@@ -4,14 +4,19 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+import sys
+
+# Allow direct invocation from any working directory.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+REPO_ROOT = Path(__file__).resolve().parents[2]
 
 from plantvillage_rc.reservoir import save_reservoir_states
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate frozen reservoir states")
-    parser.add_argument("--input-dir", type=Path, default=Path("artifacts/preprocessed"))
-    parser.add_argument("--output-dir", type=Path, default=Path("artifacts/states"))
+    parser.add_argument("--input-dir", type=Path, default=REPO_ROOT / "artifacts/preprocessed")
+    parser.add_argument("--output-dir", type=Path, default=REPO_ROOT / "artifacts/states")
     parser.add_argument("--quantile", choices=("q060", "q070", "q080"), default="q070")
     parser.add_argument("--alpha", type=float, default=0.75)
     parser.add_argument("--alpha-min", type=float, default=0.05)

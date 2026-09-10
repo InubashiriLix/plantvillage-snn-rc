@@ -99,6 +99,7 @@ def run_v3_experiments(
     alpha_max: float = 0.9,
     stage_gate: float = 0.65,
     target_macro_recall: float = 0.80,
+    v2_validation_macro_recall: float | None = None,
 ) -> dict[str, object]:
     input_dir = Path(input_dir)
     output_dir = Path(output_dir)
@@ -274,9 +275,10 @@ def run_v3_experiments(
         },
         "feature_dimension": 216,
         "ablations_validation": ablations,
-        "v2_validation_macro_recall": 0.4925877943357165,
-        "macro_recall_gain_over_v2": float(selected["val_macro_recall"])
-        - 0.4925877943357165,
+        "v2_validation_macro_recall": v2_validation_macro_recall,
+        "macro_recall_gain_over_v2": None
+        if v2_validation_macro_recall is None
+        else float(selected["val_macro_recall"]) - v2_validation_macro_recall,
         "state_inheritance_note": (
             "With both pass tails concatenated and a linear readout, carried and reset "
             "representations can be linearly equivalent under the Level-1 state equation."

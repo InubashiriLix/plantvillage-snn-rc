@@ -11,9 +11,9 @@ Nonlinearity = Literal["saturating", "linear"]
 DeviceProfile = Literal["uniform", "row-spectrum"]
 
 
-def variant_channels(variant: Variant) -> tuple[int, ...]:
+def variant_channels(variant: Variant, input_channels: int = 9) -> tuple[int, ...]:
     channels = {
-        "full": tuple(range(9)),
+        "full": tuple(range(input_channels)),
         "tonic": (0, 1, 2),
         "event": (3, 4, 5, 6, 7, 8),
     }
@@ -52,6 +52,21 @@ def row_spectrum(
     return np.repeat(values[:, None], channels, axis=1)
 
 
+def time_constant_spectrum(
+    tau_min: float = 1.0,
+    tau_max: float = 128.0,
+    *,
+    rows: int = 12,
+    channels: int = 12,
+) -> np.ndarray:
+    """Create logarithmically spaced memory constants and return alpha=exp(-1/tau)."""
+    if tau_min <= 0 or tau_max <= tau_min:
+        raise ValueError("tau bounds must satisfy 0 < tau_min < tau_max")
+    tau = np.geomspace(tau_min, tau_max, rows).astype(np.float32)
+    alpha = np.exp(-1.0 / tau).astype(np.float32)
+    return np.repeat(alpha[:, None], channels, axis=1)
+
+
 def dynamics_parameters(
     profile: DeviceProfile,
     *,
@@ -73,12 +88,17 @@ def _node_parameter(
     name: str,
     lower: float,
     upper: float | None,
+    rows: int = 12,
+    channels: int = 9,
 ) -> np.ndarray:
     parameter = np.asarray(value, dtype=np.float32)
     if parameter.ndim == 0:
-        parameter = np.full((12, 9), float(parameter), dtype=np.float32)
-    elif parameter.shape != (12, 9):
-        raise ValueError(f"{name} must be a scalar or have shape [12, 9], got {parameter.shape}")
+        parameter = np.full((rows, channels), float(parameter), dtype=np.float32)
+    elif parameter.shape != (rows, channels):
+        raise ValueError(
+            f"{name} must be a scalar or have shape [{rows}, {channels}], "
+            f"got {parameter.shape}"
+        )
     if np.any(parameter < lower) or (upper is not None and np.any(parameter >= upper)):
         relation = f"{lower} <= {name} < {upper}" if upper is not None else f"{name} >= {lower}"
         raise ValueError(f"All node values must satisfy {relation}")
@@ -97,48 +117,77 @@ def reservoir_states(
     initial_state: np.ndarray | None = None,
     initial_decay_steps: int = 0,
     return_state_matrix: bool = False,
+    checkpoint_steps: tuple[int, ...] | None = None,
 ) -> np.ndarray:
     inputs = np.asarray(inputs, dtype=np.float32)
     mask = np.asarray(mask, dtype=np.float32)
-    if inputs.ndim != 3 or inputs.shape[1:] != (12, 9):
-        raise ValueError(f"Expected inputs shape [N, 12, 9], got {inputs.shape}")
-    if mask.shape != (12, 9):
-        raise ValueError(f"Expected mask shape [12, 9], got {mask.shape}")
+    if inputs.ndim != 3:
+        raise ValueError(f"Expected inputs shape [N, T, C], got {inputs.shape}")
+    reservoir_rows, input_channels = mask.shape if mask.ndim == 2 else (-1, -1)
+    if mask.ndim != 2 or input_channels != inputs.shape[2]:
+        raise ValueError(
+            f"Mask must have shape [rows, {inputs.shape[2]}], got {mask.shape}"
+        )
     if batch_size <= 0:
         raise ValueError("batch_size must be positive")
     if initial_decay_steps < 0:
         raise ValueError("initial_decay_steps must be non-negative")
+    checkpoints = tuple(checkpoint_steps or ())
+    if checkpoints:
+        if return_state_matrix:
+            raise ValueError("return_state_matrix and checkpoint_steps cannot be combined")
+        if tuple(sorted(set(checkpoints))) != checkpoints:
+            raise ValueError("checkpoint_steps must be sorted and unique")
+        if checkpoints[0] < 1 or checkpoints[-1] > inputs.shape[1]:
+            raise ValueError("checkpoint_steps must be within the input sequence")
 
-    channels = np.asarray(variant_channels(variant))
+    channels = np.asarray(variant_channels(variant, input_channels))
+    if np.any(channels >= input_channels):
+        raise ValueError(f"Variant {variant} requires channels absent from the input")
     selected_mask = mask[:, channels]
     alpha_nodes = _node_parameter(
-        alpha, name="alpha", lower=0.0, upper=1.0
+        alpha,
+        name="alpha",
+        lower=0.0,
+        upper=1.0,
+        rows=reservoir_rows,
+        channels=input_channels,
     )[:, channels]
     gamma_nodes = _node_parameter(
-        gamma, name="gamma", lower=np.finfo(np.float32).tiny, upper=None
+        gamma,
+        name="gamma",
+        lower=np.finfo(np.float32).tiny,
+        upper=None,
+        rows=reservoir_rows,
+        channels=input_channels,
     )[:, channels]
-    expected_initial_shape = (len(inputs), 12, len(channels))
+    expected_initial_shape = (len(inputs), reservoir_rows, len(channels))
     if initial_state is not None:
         initial_state = np.asarray(initial_state, dtype=np.float32)
         if initial_state.shape != expected_initial_shape:
             raise ValueError(
                 f"Expected initial_state shape {expected_initial_shape}, got {initial_state.shape}"
             )
-    output_shape = expected_initial_shape if return_state_matrix else (
-        len(inputs),
-        12 * len(channels),
-    )
+    if checkpoints:
+        output_shape = (len(inputs), len(checkpoints) * reservoir_rows * len(channels))
+    elif return_state_matrix:
+        output_shape = expected_initial_shape
+    else:
+        output_shape = (len(inputs), reservoir_rows * len(channels))
     states = np.empty(output_shape, dtype=np.float32)
     for start in range(0, len(inputs), batch_size):
         stop = min(start + batch_size, len(inputs))
         batch = inputs[start:stop, :, channels]
         if initial_state is None:
-            state = np.zeros((stop - start, 12, len(channels)), dtype=np.float32)
+            state = np.zeros(
+                (stop - start, reservoir_rows, len(channels)), dtype=np.float32
+            )
         else:
             state = initial_state[start:stop].copy()
             if initial_decay_steps:
                 state *= alpha_nodes[None, :, :] ** initial_decay_steps
-        for time_step in range(12):
+        captured = []
+        for time_step in range(inputs.shape[1]):
             voltage = batch[:, time_step, None, :] * selected_mask[None, :, :]
             if nonlinearity == "saturating":
                 response = -np.expm1(-gamma_nodes[None, :, :] * voltage)
@@ -150,8 +199,55 @@ def reservoir_states(
                 alpha_nodes[None, :, :] * state
                 + (1.0 - alpha_nodes[None, :, :]) * response
             )
-        states[start:stop] = state if return_state_matrix else state.reshape(stop - start, -1)
+            if time_step + 1 in checkpoints:
+                captured.append(state.copy())
+        if checkpoints:
+            states[start:stop] = np.stack(captured, axis=1).reshape(stop - start, -1)
+        else:
+            states[start:stop] = (
+                state if return_state_matrix else state.reshape(stop - start, -1)
+            )
     return states
+
+
+def reservoir_states_to_memmap(
+    inputs: np.ndarray,
+    output_path: Path | str,
+    mask: np.ndarray,
+    *,
+    checkpoint_steps: tuple[int, ...],
+    alpha: float | np.ndarray,
+    gamma: float | np.ndarray,
+    batch_size: int = 512,
+) -> np.memmap:
+    """Generate checkpoint features in bounded memory and persist as a .npy memmap."""
+    inputs = np.asarray(inputs)
+    if inputs.ndim != 3:
+        raise ValueError(f"Expected inputs shape [N, T, C], got {inputs.shape}")
+    if not checkpoint_steps:
+        raise ValueError("checkpoint_steps cannot be empty")
+    mask = np.asarray(mask)
+    feature_dimension = len(checkpoint_steps) * mask.shape[0] * mask.shape[1]
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output = np.lib.format.open_memmap(
+        output_path,
+        mode="w+",
+        dtype=np.float32,
+        shape=(len(inputs), feature_dimension),
+    )
+    for start in range(0, len(inputs), batch_size):
+        stop = min(start + batch_size, len(inputs))
+        output[start:stop] = reservoir_states(
+            inputs[start:stop],
+            mask,
+            alpha=alpha,
+            gamma=gamma,
+            checkpoint_steps=checkpoint_steps,
+            batch_size=batch_size,
+        )
+    output.flush()
+    return output
 
 
 def dual_pass_states(

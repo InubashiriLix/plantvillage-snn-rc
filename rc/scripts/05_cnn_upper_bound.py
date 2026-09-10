@@ -4,6 +4,11 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+import sys
+
+# Allow direct invocation from any working directory.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+REPO_ROOT = Path(__file__).resolve().parents[2]
 
 import numpy as np
 import torch
@@ -53,8 +58,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="ImageNet MobileNetV3-Small upper-bound baseline; not part of RC"
     )
-    parser.add_argument("--input-dir", type=Path, default=Path("artifacts/preprocessed"))
-    parser.add_argument("--output-dir", type=Path, default=Path("artifacts/cnn_upper_bound"))
+    parser.add_argument("--input-dir", type=Path, default=REPO_ROOT / "artifacts/preprocessed")
+    parser.add_argument("--output-dir", type=Path, default=REPO_ROOT / "artifacts/cnn_upper_bound")
     parser.add_argument("--epochs", type=int, default=5)
     parser.add_argument("--batch-size", type=int, default=64)
     parser.add_argument("--learning-rate", type=float, default=1e-3)
