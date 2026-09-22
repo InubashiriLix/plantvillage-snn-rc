@@ -1,0 +1,90 @@
+stage,candidate,accuracy,configuration,seconds
+1,dev_017,0.8583333333333333,"{""alpha"": 0.1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""dev_017"", ""pca"": 32}",0.7283673620004265
+1,dev_020,0.85,"{""alpha"": 1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""dev_020"", ""pca"": 64}",1.1472331799996027
+1,dev_034,0.85,"{""alpha"": 1, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""dev_034"", ""pca"": 64}",1.0747301199990034
+1,dev_019,0.8458333333333333,"{""alpha"": 0.1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""dev_019"", ""pca"": 64}",0.6323186039990105
+1,dev_018,0.8416666666666667,"{""alpha"": 1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""dev_018"", ""pca"": 32}",0.9605727439993643
+1,dev_032,0.8416666666666667,"{""alpha"": 1, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""dev_032"", ""pca"": 32}",1.0369574340002146
+1,dev_033,0.8375,"{""alpha"": 0.1, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""dev_033"", ""pca"": 64}",0.732449577000807
+1,dev_031,0.8333333333333334,"{""alpha"": 0.1, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""dev_031"", ""pca"": 32}",0.8498085100000026
+1,dev_015,0.8125,"{""C"": 10, ""family"": ""SVM"", ""feature"": ""compensated_distribution"", ""gamma"": ""scale"", ""id"": ""dev_015""}",0.7207642079993093
+1,dev_016,0.8125,"{""C"": 100, ""family"": ""SVM"", ""feature"": ""compensated_distribution"", ""gamma"": ""scale"", ""id"": ""dev_016""}",0.7194849229999818
+1,dev_038,0.8083333333333333,"{""family"": ""ET"", ""feature"": ""sequence"", ""id"": ""dev_038"", ""max_features"": 0.3, ""rho"": 0.94}",2.3462294709970593
+1,dev_026,0.8041666666666667,"{""alpha"": 0.1, ""family"": ""MLP"", ""feature"": ""mixed"", ""id"": ""dev_026"", ""pca"": 64}",0.7841103639984794
+1,dev_013,0.7958333333333333,"{""alpha"": 1, ""family"": ""MLP"", ""feature"": ""distribution"", ""id"": ""dev_013"", ""pca"": 64}",0.9437539339996874
+1,dev_039,0.7958333333333333,"{""family"": ""RF"", ""feature"": ""sequence"", ""id"": ""dev_039"", ""max_features"": ""sqrt"", ""rho"": 0.98}",1.7371534640005848
+1,dev_049,0.7958333333333333,"{""family"": ""RF"", ""feature"": ""multiscale"", ""id"": ""dev_049"", ""max_features"": ""sqrt""}",3.5399538759993447
+1,dev_042,0.7916666666666666,"{""family"": ""ET"", ""feature"": ""sequence"", ""id"": ""dev_042"", ""max_features"": 0.3, ""rho"": 0.98}",2.3377450309999404
+1,dev_012,0.7875,"{""alpha"": 0.1, ""family"": ""MLP"", ""feature"": ""distribution"", ""id"": ""dev_012"", ""pca"": 64}",0.7751207820001582
+1,dev_027,0.7875,"{""alpha"": 1, ""family"": ""MLP"", ""feature"": ""mixed"", ""id"": ""dev_027"", ""pca"": 64}",1.1773917710015667
+1,dev_044,0.7875,"{""family"": ""RF"", ""feature"": ""sequence"", ""id"": ""dev_044"", ""max_features"": 0.3, ""rho"": 1.0}",7.26198593799927
+1,dev_040,0.7833333333333333,"{""family"": ""RF"", ""feature"": ""sequence"", ""id"": ""dev_040"", ""max_features"": 0.3, ""rho"": 0.98}",7.3486807879999105
+1,dev_043,0.7833333333333333,"{""family"": ""RF"", ""feature"": ""sequence"", ""id"": ""dev_043"", ""max_features"": ""sqrt"", ""rho"": 1.0}",1.6803863280001679
+1,dev_024,0.7791666666666667,"{""alpha"": 0.1, ""family"": ""MLP"", ""feature"": ""mixed"", ""id"": ""dev_024"", ""pca"": 32}",0.9279006990000198
+1,dev_037,0.7791666666666667,"{""family"": ""ET"", ""feature"": ""sequence"", ""id"": ""dev_037"", ""max_features"": ""sqrt"", ""rho"": 0.94}",0.9156289480015403
+1,dev_050,0.7791666666666667,"{""family"": ""ET"", ""feature"": ""multiscale"", ""id"": ""dev_050"", ""max_features"": ""sqrt""}",1.7406107780007005
+1,dev_010,0.775,"{""alpha"": 0.1, ""family"": ""MLP"", ""feature"": ""distribution"", ""id"": ""dev_010"", ""pca"": 32}",0.7461499349992664
+1,dev_011,0.7708333333333334,"{""alpha"": 1, ""family"": ""MLP"", ""feature"": ""distribution"", ""id"": ""dev_011"", ""pca"": 32}",0.7435238280013436
+1,dev_029,0.7708333333333334,"{""C"": 10, ""family"": ""SVM"", ""feature"": ""multiscale"", ""gamma"": ""scale"", ""id"": ""dev_029""}",1.0566493959995569
+1,dev_030,0.7708333333333334,"{""C"": 100, ""family"": ""SVM"", ""feature"": ""multiscale"", ""gamma"": ""scale"", ""id"": ""dev_030""}",1.0731946129999415
+1,dev_035,0.7708333333333334,"{""family"": ""RF"", ""feature"": ""sequence"", ""id"": ""dev_035"", ""max_features"": ""sqrt"", ""rho"": 0.94}",1.7735858390005887
+1,dev_041,0.7708333333333334,"{""family"": ""ET"", ""feature"": ""sequence"", ""id"": ""dev_041"", ""max_features"": ""sqrt"", ""rho"": 0.98}",0.8536818040010985
+1,dev_046,0.7708333333333334,"{""family"": ""ET"", ""feature"": ""sequence"", ""id"": ""dev_046"", ""max_features"": 0.3, ""rho"": 1.0}",2.3421117220023007
+1,dev_025,0.7666666666666667,"{""alpha"": 1, ""family"": ""MLP"", ""feature"": ""mixed"", ""id"": ""dev_025"", ""pca"": 32}",0.971299512002588
+1,dev_014,0.7625,"{""C"": 1, ""family"": ""SVM"", ""feature"": ""compensated_distribution"", ""gamma"": ""scale"", ""id"": ""dev_014""}",0.6721759579995705
+1,dev_036,0.7541666666666667,"{""family"": ""RF"", ""feature"": ""sequence"", ""id"": ""dev_036"", ""max_features"": 0.3, ""rho"": 0.94}",7.4293425859978015
+1,dev_045,0.7375,"{""family"": ""ET"", ""feature"": ""sequence"", ""id"": ""dev_045"", ""max_features"": ""sqrt"", ""rho"": 1.0}",0.8625019469982362
+1,dev_028,0.7166666666666667,"{""C"": 1, ""family"": ""SVM"", ""feature"": ""multiscale"", ""gamma"": ""scale"", ""id"": ""dev_028""}",1.0480358419990807
+1,dev_047,0.7125,"{""family"": ""RF"", ""feature"": ""distribution"", ""id"": ""dev_047"", ""max_features"": ""sqrt""}",2.5983776909997687
+1,dev_008,0.7,"{""C"": 10, ""family"": ""SVM"", ""feature"": ""distribution"", ""gamma"": ""scale"", ""id"": ""dev_008""}",0.4514496970004984
+1,dev_009,0.7,"{""C"": 100, ""family"": ""SVM"", ""feature"": ""distribution"", ""gamma"": ""scale"", ""id"": ""dev_009""}",0.44267136300186394
+1,dev_022,0.6958333333333333,"{""C"": 10, ""family"": ""SVM"", ""feature"": ""mixed"", ""gamma"": ""scale"", ""id"": ""dev_022""}",0.7880806879984448
+1,dev_023,0.6958333333333333,"{""C"": 100, ""family"": ""SVM"", ""feature"": ""mixed"", ""gamma"": ""scale"", ""id"": ""dev_023""}",0.7812559359990701
+1,dev_048,0.6958333333333333,"{""family"": ""ET"", ""feature"": ""distribution"", ""id"": ""dev_048"", ""max_features"": ""sqrt""}",1.2838415859987435
+1,dev_001,0.6541666666666667,"{""C"": 10, ""family"": ""SVM"", ""feature"": ""sequence"", ""gamma"": ""scale"", ""id"": ""dev_001""}",0.14621951300068758
+1,dev_002,0.6541666666666667,"{""C"": 100, ""family"": ""SVM"", ""feature"": ""sequence"", ""gamma"": ""scale"", ""id"": ""dev_002""}",0.13019817200256512
+1,dev_006,0.6541666666666667,"{""alpha"": 1, ""family"": ""MLP"", ""feature"": ""sequence"", ""id"": ""dev_006"", ""pca"": 64}",0.620565967001312
+1,dev_005,0.6458333333333334,"{""alpha"": 0.1, ""family"": ""MLP"", ""feature"": ""sequence"", ""id"": ""dev_005"", ""pca"": 64}",0.18239183900004718
+1,dev_007,0.6375,"{""C"": 1, ""family"": ""SVM"", ""feature"": ""distribution"", ""gamma"": ""scale"", ""id"": ""dev_007""}",0.43157743600022513
+1,dev_021,0.6375,"{""C"": 1, ""family"": ""SVM"", ""feature"": ""mixed"", ""gamma"": ""scale"", ""id"": ""dev_021""}",0.7675485059990024
+1,dev_003,0.625,"{""alpha"": 0.1, ""family"": ""MLP"", ""feature"": ""sequence"", ""id"": ""dev_003"", ""pca"": 32}",0.4177745650013094
+1,dev_004,0.6208333333333333,"{""alpha"": 1, ""family"": ""MLP"", ""feature"": ""sequence"", ""id"": ""dev_004"", ""pca"": 32}",0.493069636002474
+1,dev_000,0.6041666666666666,"{""C"": 1, ""family"": ""SVM"", ""feature"": ""sequence"", ""gamma"": ""scale"", ""id"": ""dev_000""}",0.1425836269991123
+2,ref_026,0.8541666666666666,"{""activation"": ""relu"", ""alpha"": 10, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""ref_026"", ""pca"": 64, ""whiten"": true}",1.3062971910003398
+2,ref_027,0.8541666666666666,"{""activation"": ""tanh"", ""alpha"": 10, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""ref_027"", ""pca"": 64, ""whiten"": true}",0.8737557290005498
+2,ref_036,0.8541666666666666,"{""alpha"": 1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_036"", ""pca"": 32, ""rho"": 1.0}",0.8424408650025725
+2,ref_020,0.85,"{""activation"": ""relu"", ""alpha"": 1, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""ref_020"", ""pca"": 32, ""whiten"": true}",1.0936389620001137
+2,ref_021,0.85,"{""activation"": ""tanh"", ""alpha"": 1, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""ref_021"", ""pca"": 32, ""whiten"": true}",0.7910364279996429
+2,ref_030,0.85,"{""activation"": ""relu"", ""alpha"": 10, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""ref_030"", ""pca"": 128, ""whiten"": true}",1.1699455069974647
+2,ref_024,0.8458333333333333,"{""activation"": ""relu"", ""alpha"": 1, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""ref_024"", ""pca"": 64, ""whiten"": true}",1.3656911680009216
+2,ref_025,0.8458333333333333,"{""activation"": ""tanh"", ""alpha"": 1, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""ref_025"", ""pca"": 64, ""whiten"": true}",0.872733086001972
+2,ref_028,0.8458333333333333,"{""activation"": ""relu"", ""alpha"": 1, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""ref_028"", ""pca"": 128, ""whiten"": true}",0.840929772999516
+2,ref_031,0.8458333333333333,"{""activation"": ""tanh"", ""alpha"": 10, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""ref_031"", ""pca"": 128, ""whiten"": true}",0.8629073730007804
+2,ref_004,0.8416666666666667,"{""activation"": ""relu"", ""alpha"": 1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_004"", ""pca"": 32, ""whiten"": true}",0.9831403230018623
+2,ref_007,0.8416666666666667,"{""activation"": ""tanh"", ""alpha"": 10, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_007"", ""pca"": 32, ""whiten"": true}",0.6077232110001205
+2,ref_029,0.8375,"{""activation"": ""tanh"", ""alpha"": 1, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""ref_029"", ""pca"": 128, ""whiten"": true}",0.8088906670018332
+2,ref_037,0.8375,"{""alpha"": 1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_037"", ""pca"": 64, ""rho"": 1.0}",0.9306611079991853
+2,ref_008,0.8333333333333334,"{""activation"": ""relu"", ""alpha"": 1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_008"", ""pca"": 64, ""whiten"": true}",1.1287341339993873
+2,ref_035,0.8333333333333334,"{""alpha"": 1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_035"", ""pca"": 64, ""rho"": 0.94}",1.0836863610020373
+2,ref_002,0.8291666666666667,"{""activation"": ""relu"", ""alpha"": 10, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_002"", ""pca"": 16, ""whiten"": true}",0.9112113490009506
+2,ref_005,0.8291666666666667,"{""activation"": ""tanh"", ""alpha"": 1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_005"", ""pca"": 32, ""whiten"": true}",0.6505646670011629
+2,ref_006,0.8291666666666667,"{""activation"": ""relu"", ""alpha"": 10, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_006"", ""pca"": 32, ""whiten"": true}",0.9147913790002349
+2,ref_009,0.8291666666666667,"{""activation"": ""tanh"", ""alpha"": 1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_009"", ""pca"": 64, ""whiten"": true}",0.612032562999957
+2,ref_010,0.8291666666666667,"{""activation"": ""relu"", ""alpha"": 10, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_010"", ""pca"": 64, ""whiten"": true}",1.1578823250019923
+2,ref_011,0.8291666666666667,"{""activation"": ""tanh"", ""alpha"": 10, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_011"", ""pca"": 64, ""whiten"": true}",0.6673444759981066
+2,ref_022,0.8291666666666667,"{""activation"": ""relu"", ""alpha"": 10, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""ref_022"", ""pca"": 32, ""whiten"": true}",1.117338459000166
+2,ref_023,0.8291666666666667,"{""activation"": ""tanh"", ""alpha"": 10, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""ref_023"", ""pca"": 32, ""whiten"": true}",0.8581280280013743
+2,ref_001,0.825,"{""activation"": ""tanh"", ""alpha"": 1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_001"", ""pca"": 16, ""whiten"": true}",0.7033760770027584
+2,ref_003,0.8208333333333333,"{""activation"": ""tanh"", ""alpha"": 10, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_003"", ""pca"": 16, ""whiten"": true}",0.6848861250000482
+2,ref_016,0.8208333333333333,"{""activation"": ""relu"", ""alpha"": 1, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""ref_016"", ""pca"": 16, ""whiten"": true}",1.0489836750020913
+2,ref_000,0.8125,"{""activation"": ""relu"", ""alpha"": 1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_000"", ""pca"": 16, ""whiten"": true}",0.9043661100004101
+2,ref_017,0.8125,"{""activation"": ""tanh"", ""alpha"": 1, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""ref_017"", ""pca"": 16, ""whiten"": true}",0.8295245499975863
+2,ref_033,0.8083333333333333,"{""alpha"": 1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_033"", ""pca"": 64, ""rho"": 0.9}",1.1200206430003163
+2,ref_034,0.8041666666666667,"{""alpha"": 1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_034"", ""pca"": 32, ""rho"": 0.94}",0.9118777029980265
+2,ref_018,0.7875,"{""activation"": ""relu"", ""alpha"": 10, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""ref_018"", ""pca"": 16, ""whiten"": true}",1.0731684450001922
+2,ref_019,0.7875,"{""activation"": ""tanh"", ""alpha"": 10, ""family"": ""MLP"", ""feature"": ""multiscale"", ""id"": ""ref_019"", ""pca"": 16, ""whiten"": true}",0.8613183859997662
+2,ref_014,0.7833333333333333,"{""activation"": ""relu"", ""alpha"": 10, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_014"", ""pca"": 128, ""whiten"": true}",1.1331338370000594
+2,ref_015,0.7833333333333333,"{""activation"": ""tanh"", ""alpha"": 10, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_015"", ""pca"": 128, ""whiten"": true}",0.7995222930003365
+2,ref_013,0.775,"{""activation"": ""tanh"", ""alpha"": 1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_013"", ""pca"": 128, ""whiten"": true}",0.656875372002105
+2,ref_032,0.775,"{""alpha"": 1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_032"", ""pca"": 32, ""rho"": 0.9}",0.9441056249997928
+2,ref_012,0.7708333333333334,"{""activation"": ""relu"", ""alpha"": 1, ""family"": ""MLP"", ""feature"": ""compensated_distribution"", ""id"": ""ref_012"", ""pca"": 128, ""whiten"": true}",0.6582978059996094

@@ -153,3 +153,39 @@ def test_nested_pipeline_and_roundtrip(measured_fixture, tmp_path):
         probabilities_ = model.predict_proba(dataset.x)
     np.testing.assert_allclose(probabilities_.sum(axis=1), 1)
     assert np.isfinite(probabilities_).all()
+
+
+@pytest.mark.parametrize('kind,dimensions', [('sequence', 576), ('distribution', 1944),
+                                          ('compensated_distribution', 1944), ('mixed', 2520), ('multiscale', 4113)])
+def test_refinement_is_sample_local_and_preserves_tail(kind, dimensions):
+    from plantvillage_rc.hardware_refinement import ResponseFeatures
+    rng = np.random.default_rng(4)
+    x = rng.normal(size=(3, 9, 12, 65)) * 1e-6
+    transform = ResponseFeatures(kind)
+    output = transform.fit_transform(x)
+    assert output.shape == (3, dimensions)
+    np.testing.assert_allclose(transform.transform(x[1:2]), output[1:2])
+    if kind == 'compensated_distribution':
+        x[..., 64] += 100e-6
+        changed = transform.transform(x).reshape(3, 9, 12, 18)
+        previous = output.reshape(3, 9, 12, 18)
+        np.testing.assert_allclose(changed[..., :-1], previous[..., :-1])
+        np.testing.assert_allclose(changed[..., -1] - previous[..., -1], 100)
+
+
+def test_refinement_nested_cache_guard_and_model_roundtrip(measured_fixture, tmp_path):
+    from plantvillage_rc.hardware_refinement_learning import evaluate as refine_evaluate, fit_final as refine_fit
+    paths, _ = measured_fixture
+    dataset = load_dataset(**paths, expected_samples=20, expected_classes=2)
+    configs = [{'id': 'tiny', 'family': 'ET', 'feature': 'compensated_distribution',
+                'trees': 3, 'max_features': 'sqrt'}]
+    output = tmp_path / 'refinement'
+    result = refine_evaluate(dataset, configs, output, workers=1, hours=.1)
+    assert result['prediction_count'] == 60 and result['mean_accuracy'] > .9
+    assert refine_evaluate(dataset, configs, output, workers=1, hours=1e-10) == result
+    refine_fit(dataset, configs, output, workers=1, hours=.1)
+    reloaded = joblib.load(output / 'model.joblib')
+    assert reloaded.predict_proba(dataset.x).shape == (20, 2)
+    altered = [{**configs[0], 'trees': 4}]
+    with pytest.raises(ValueError, match='frozen run changed'):
+        refine_evaluate(dataset, altered, output, workers=1)

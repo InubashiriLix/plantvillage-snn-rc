@@ -1,0 +1,338 @@
+[
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 16,
+    "alpha": 1,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_000"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 16,
+    "alpha": 1,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_001"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 16,
+    "alpha": 10,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_002"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 16,
+    "alpha": 10,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_003"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 1,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_004"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 1,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_005"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 10,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_006"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 10,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_007"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 1,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_008"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 1,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_009"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 10,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_010"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 10,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_011"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 128,
+    "alpha": 1,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_012"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 128,
+    "alpha": 1,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_013"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 128,
+    "alpha": 10,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_014"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 128,
+    "alpha": 10,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_015"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 16,
+    "alpha": 1,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_016"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 16,
+    "alpha": 1,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_017"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 16,
+    "alpha": 10,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_018"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 16,
+    "alpha": 10,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_019"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 32,
+    "alpha": 1,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_020"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 32,
+    "alpha": 1,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_021"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 32,
+    "alpha": 10,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_022"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 32,
+    "alpha": 10,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_023"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 1,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_024"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 1,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_025"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 10,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_026"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 10,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_027"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 128,
+    "alpha": 1,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_028"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 128,
+    "alpha": 1,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_029"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 128,
+    "alpha": 10,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_030"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 128,
+    "alpha": 10,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_031"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 1,
+    "rho": 0.9,
+    "id": "ref_032"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 1,
+    "rho": 0.9,
+    "id": "ref_033"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 1,
+    "rho": 0.94,
+    "id": "ref_034"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 1,
+    "rho": 0.94,
+    "id": "ref_035"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 1,
+    "rho": 1.0,
+    "id": "ref_036"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 1,
+    "rho": 1.0,
+    "id": "ref_037"
+  }
+]

@@ -1,0 +1,261 @@
+{
+  "data_hashes": {
+    "responses": "3ab3dbccd5f0fa179be13c527c4b6b715ac120a103474ead9cd4e4de1aaf432e",
+    "inputs": "6c00725801c98668cbbe30ff76fc30c3d49f739955a1830df90305238f8610c8",
+    "workbook": "6e72956c9d86d00e149b391323fb152c26dfab36e82d077789ddbdb46deb215b"
+  },
+  "candidates": [
+    {
+      "family": "MLP",
+      "feature": "distribution",
+      "pca": 64,
+      "alpha": 0.1,
+      "id": "dev_012"
+    },
+    {
+      "family": "MLP",
+      "feature": "distribution",
+      "pca": 64,
+      "alpha": 1,
+      "id": "dev_013"
+    },
+    {
+      "family": "SVM",
+      "feature": "compensated_distribution",
+      "C": 10,
+      "gamma": "scale",
+      "id": "dev_015"
+    },
+    {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 32,
+      "alpha": 0.1,
+      "id": "dev_017"
+    },
+    {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 32,
+      "alpha": 1,
+      "id": "dev_018"
+    },
+    {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 64,
+      "alpha": 0.1,
+      "id": "dev_019"
+    },
+    {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 64,
+      "alpha": 1,
+      "id": "dev_020"
+    },
+    {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 32,
+      "alpha": 0.1,
+      "id": "dev_031"
+    },
+    {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 32,
+      "alpha": 1,
+      "id": "dev_032"
+    },
+    {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 64,
+      "alpha": 0.1,
+      "id": "dev_033"
+    },
+    {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 64,
+      "alpha": 1,
+      "id": "dev_034"
+    },
+    {
+      "family": "RF",
+      "feature": "sequence",
+      "rho": 0.94,
+      "max_features": "sqrt",
+      "id": "dev_035"
+    },
+    {
+      "family": "RF",
+      "feature": "sequence",
+      "rho": 0.94,
+      "max_features": 0.3,
+      "id": "dev_036"
+    },
+    {
+      "family": "ET",
+      "feature": "sequence",
+      "rho": 0.94,
+      "max_features": "sqrt",
+      "id": "dev_037"
+    },
+    {
+      "family": "ET",
+      "feature": "sequence",
+      "rho": 0.94,
+      "max_features": 0.3,
+      "id": "dev_038"
+    },
+    {
+      "family": "RF",
+      "feature": "sequence",
+      "rho": 0.98,
+      "max_features": "sqrt",
+      "id": "dev_039"
+    },
+    {
+      "family": "RF",
+      "feature": "sequence",
+      "rho": 0.98,
+      "max_features": 0.3,
+      "id": "dev_040"
+    },
+    {
+      "family": "ET",
+      "feature": "sequence",
+      "rho": 0.98,
+      "max_features": "sqrt",
+      "id": "dev_041"
+    },
+    {
+      "family": "ET",
+      "feature": "sequence",
+      "rho": 0.98,
+      "max_features": 0.3,
+      "id": "dev_042"
+    },
+    {
+      "family": "RF",
+      "feature": "sequence",
+      "rho": 1.0,
+      "max_features": "sqrt",
+      "id": "dev_043"
+    },
+    {
+      "family": "RF",
+      "feature": "sequence",
+      "rho": 1.0,
+      "max_features": 0.3,
+      "id": "dev_044"
+    },
+    {
+      "family": "ET",
+      "feature": "sequence",
+      "rho": 1.0,
+      "max_features": "sqrt",
+      "id": "dev_045"
+    },
+    {
+      "family": "ET",
+      "feature": "sequence",
+      "rho": 1.0,
+      "max_features": 0.3,
+      "id": "dev_046"
+    },
+    {
+      "family": "RF",
+      "feature": "multiscale",
+      "max_features": "sqrt",
+      "id": "dev_049"
+    },
+    {
+      "family": "ET",
+      "feature": "multiscale",
+      "max_features": "sqrt",
+      "id": "dev_050"
+    },
+    {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 32,
+      "alpha": 1,
+      "activation": "relu",
+      "whiten": true,
+      "id": "ref_020"
+    },
+    {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 32,
+      "alpha": 1,
+      "activation": "tanh",
+      "whiten": true,
+      "id": "ref_021"
+    },
+    {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 64,
+      "alpha": 10,
+      "activation": "relu",
+      "whiten": true,
+      "id": "ref_026"
+    },
+    {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 64,
+      "alpha": 10,
+      "activation": "tanh",
+      "whiten": true,
+      "id": "ref_027"
+    },
+    {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 32,
+      "alpha": 1,
+      "rho": 1.0,
+      "id": "ref_036"
+    }
+  ],
+  "code_hashes": {
+    "hardware_data.py": "5d1fa8dcafa09ce40c020aa29d236c8f7d6f7231716f81fd14a17ce63a7ae568",
+    "hardware_models.py": "825901026e947f1ae86d0393701e66b71ab80e71a9a0a0d43641a63f11c6434d",
+    "hardware_learning.py": "ee81b812233b09567fe482178bd1db5436e7828c604822ab51baca3277160817",
+    "hardware_refinement.py": "ee3663936b0f4f09826d144e677a483a44dfad87e4c9a74c368dd93c8b8a174a",
+    "hardware_refinement_learning.py": "895f603cad242d899a9bf9848d2ec2bcc5e67ae636e86811ce0e42cc744d137a"
+  },
+  "versions": {
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "python": "3.11.15",
+  "repeat_seeds": [
+    20260909,
+    20260910,
+    20260911
+  ],
+  "inner_folds": 3,
+  "family_top_k": [
+    1,
+    3,
+    5
+  ],
+  "tree_weights": [
+    0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1
+  ],
+  "scope": "Exploratory follow-up on previously examined samples; no independent test."
+}

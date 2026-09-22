@@ -1,0 +1,219 @@
+[
+  {
+    "family": "MLP",
+    "feature": "distribution",
+    "pca": 64,
+    "alpha": 0.1,
+    "id": "dev_012"
+  },
+  {
+    "family": "MLP",
+    "feature": "distribution",
+    "pca": 64,
+    "alpha": 1,
+    "id": "dev_013"
+  },
+  {
+    "family": "SVM",
+    "feature": "compensated_distribution",
+    "C": 10,
+    "gamma": "scale",
+    "id": "dev_015"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 0.1,
+    "id": "dev_017"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 1,
+    "id": "dev_018"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 0.1,
+    "id": "dev_019"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 1,
+    "id": "dev_020"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 32,
+    "alpha": 0.1,
+    "id": "dev_031"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 32,
+    "alpha": 1,
+    "id": "dev_032"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 0.1,
+    "id": "dev_033"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 1,
+    "id": "dev_034"
+  },
+  {
+    "family": "RF",
+    "feature": "sequence",
+    "rho": 0.94,
+    "max_features": "sqrt",
+    "id": "dev_035"
+  },
+  {
+    "family": "RF",
+    "feature": "sequence",
+    "rho": 0.94,
+    "max_features": 0.3,
+    "id": "dev_036"
+  },
+  {
+    "family": "ET",
+    "feature": "sequence",
+    "rho": 0.94,
+    "max_features": "sqrt",
+    "id": "dev_037"
+  },
+  {
+    "family": "ET",
+    "feature": "sequence",
+    "rho": 0.94,
+    "max_features": 0.3,
+    "id": "dev_038"
+  },
+  {
+    "family": "RF",
+    "feature": "sequence",
+    "rho": 0.98,
+    "max_features": "sqrt",
+    "id": "dev_039"
+  },
+  {
+    "family": "RF",
+    "feature": "sequence",
+    "rho": 0.98,
+    "max_features": 0.3,
+    "id": "dev_040"
+  },
+  {
+    "family": "ET",
+    "feature": "sequence",
+    "rho": 0.98,
+    "max_features": "sqrt",
+    "id": "dev_041"
+  },
+  {
+    "family": "ET",
+    "feature": "sequence",
+    "rho": 0.98,
+    "max_features": 0.3,
+    "id": "dev_042"
+  },
+  {
+    "family": "RF",
+    "feature": "sequence",
+    "rho": 1.0,
+    "max_features": "sqrt",
+    "id": "dev_043"
+  },
+  {
+    "family": "RF",
+    "feature": "sequence",
+    "rho": 1.0,
+    "max_features": 0.3,
+    "id": "dev_044"
+  },
+  {
+    "family": "ET",
+    "feature": "sequence",
+    "rho": 1.0,
+    "max_features": "sqrt",
+    "id": "dev_045"
+  },
+  {
+    "family": "ET",
+    "feature": "sequence",
+    "rho": 1.0,
+    "max_features": 0.3,
+    "id": "dev_046"
+  },
+  {
+    "family": "RF",
+    "feature": "multiscale",
+    "max_features": "sqrt",
+    "id": "dev_049"
+  },
+  {
+    "family": "ET",
+    "feature": "multiscale",
+    "max_features": "sqrt",
+    "id": "dev_050"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 32,
+    "alpha": 1,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_020"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 32,
+    "alpha": 1,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_021"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 10,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_026"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 10,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_027"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 1,
+    "rho": 1.0,
+    "id": "ref_036"
+  }
+]

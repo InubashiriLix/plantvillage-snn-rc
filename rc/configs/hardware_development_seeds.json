@@ -1,0 +1,214 @@
+[
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 0.1,
+    "id": "dev_017_s1",
+    "seed": 20260924
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 0.1,
+    "id": "dev_017_s2",
+    "seed": 20260925
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 0.1,
+    "id": "dev_017_s3",
+    "seed": 20260926
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 0.1,
+    "id": "dev_017_s4",
+    "seed": 20260927
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 1,
+    "id": "dev_020_s1",
+    "seed": 20260924
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 1,
+    "id": "dev_020_s2",
+    "seed": 20260925
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 1,
+    "id": "dev_020_s3",
+    "seed": 20260926
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 1,
+    "id": "dev_020_s4",
+    "seed": 20260927
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 1,
+    "id": "dev_034_s1",
+    "seed": 20260924
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 1,
+    "id": "dev_034_s2",
+    "seed": 20260925
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 1,
+    "id": "dev_034_s3",
+    "seed": 20260926
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 1,
+    "id": "dev_034_s4",
+    "seed": 20260927
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 10,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_026_s1",
+    "seed": 20260924
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 10,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_026_s2",
+    "seed": 20260925
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 10,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_026_s3",
+    "seed": 20260926
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 10,
+    "activation": "relu",
+    "whiten": true,
+    "id": "ref_026_s4",
+    "seed": 20260927
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 10,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_027_s1",
+    "seed": 20260924
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 10,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_027_s2",
+    "seed": 20260925
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 10,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_027_s3",
+    "seed": 20260926
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 10,
+    "activation": "tanh",
+    "whiten": true,
+    "id": "ref_027_s4",
+    "seed": 20260927
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 1,
+    "rho": 1.0,
+    "id": "ref_036_s1",
+    "seed": 20260924
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 1,
+    "rho": 1.0,
+    "id": "ref_036_s2",
+    "seed": 20260925
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 1,
+    "rho": 1.0,
+    "id": "ref_036_s3",
+    "seed": 20260926
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 1,
+    "rho": 1.0,
+    "id": "ref_036_s4",
+    "seed": 20260927
+  }
+]

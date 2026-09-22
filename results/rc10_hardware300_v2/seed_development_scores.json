@@ -1,0 +1,368 @@
+[
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 32,
+      "alpha": 0.1,
+      "id": "dev_017_s1",
+      "seed": 20260924
+    },
+    "accuracy": 0.8458333333333333,
+    "seconds": 0.8461312949984858,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 32,
+      "alpha": 0.1,
+      "id": "dev_017_s2",
+      "seed": 20260925
+    },
+    "accuracy": 0.8541666666666666,
+    "seconds": 0.6970885050031939,
+    "warnings": []
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 32,
+      "alpha": 0.1,
+      "id": "dev_017_s3",
+      "seed": 20260926
+    },
+    "accuracy": 0.8541666666666666,
+    "seconds": 0.6794133890034573,
+    "warnings": []
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 32,
+      "alpha": 0.1,
+      "id": "dev_017_s4",
+      "seed": 20260927
+    },
+    "accuracy": 0.85,
+    "seconds": 0.7358107890031533,
+    "warnings": []
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 64,
+      "alpha": 1,
+      "id": "dev_020_s1",
+      "seed": 20260924
+    },
+    "accuracy": 0.8541666666666666,
+    "seconds": 1.091614381002728,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 64,
+      "alpha": 1,
+      "id": "dev_020_s2",
+      "seed": 20260925
+    },
+    "accuracy": 0.85,
+    "seconds": 1.086509805998503,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 64,
+      "alpha": 1,
+      "id": "dev_020_s3",
+      "seed": 20260926
+    },
+    "accuracy": 0.8583333333333333,
+    "seconds": 1.133443170998362,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 64,
+      "alpha": 1,
+      "id": "dev_020_s4",
+      "seed": 20260927
+    },
+    "accuracy": 0.85,
+    "seconds": 1.1295458130007319,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 64,
+      "alpha": 1,
+      "id": "dev_034_s1",
+      "seed": 20260924
+    },
+    "accuracy": 0.8458333333333333,
+    "seconds": 1.2825955629996315,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 64,
+      "alpha": 1,
+      "id": "dev_034_s2",
+      "seed": 20260925
+    },
+    "accuracy": 0.8458333333333333,
+    "seconds": 1.2597932600001513,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 64,
+      "alpha": 1,
+      "id": "dev_034_s3",
+      "seed": 20260926
+    },
+    "accuracy": 0.85,
+    "seconds": 1.2297744440002134,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 64,
+      "alpha": 1,
+      "id": "dev_034_s4",
+      "seed": 20260927
+    },
+    "accuracy": 0.8458333333333333,
+    "seconds": 1.204242327999964,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 64,
+      "alpha": 10,
+      "activation": "relu",
+      "whiten": true,
+      "id": "ref_026_s1",
+      "seed": 20260924
+    },
+    "accuracy": 0.85,
+    "seconds": 1.250741650997952,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 64,
+      "alpha": 10,
+      "activation": "relu",
+      "whiten": true,
+      "id": "ref_026_s2",
+      "seed": 20260925
+    },
+    "accuracy": 0.85,
+    "seconds": 1.2713864700017439,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 64,
+      "alpha": 10,
+      "activation": "relu",
+      "whiten": true,
+      "id": "ref_026_s3",
+      "seed": 20260926
+    },
+    "accuracy": 0.8541666666666666,
+    "seconds": 1.2739987780005322,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 64,
+      "alpha": 10,
+      "activation": "relu",
+      "whiten": true,
+      "id": "ref_026_s4",
+      "seed": 20260927
+    },
+    "accuracy": 0.8583333333333333,
+    "seconds": 1.2429553609981667,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 64,
+      "alpha": 10,
+      "activation": "tanh",
+      "whiten": true,
+      "id": "ref_027_s1",
+      "seed": 20260924
+    },
+    "accuracy": 0.8541666666666666,
+    "seconds": 0.7951978390010481,
+    "warnings": []
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 64,
+      "alpha": 10,
+      "activation": "tanh",
+      "whiten": true,
+      "id": "ref_027_s2",
+      "seed": 20260925
+    },
+    "accuracy": 0.8583333333333333,
+    "seconds": 0.7976499880023766,
+    "warnings": []
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 64,
+      "alpha": 10,
+      "activation": "tanh",
+      "whiten": true,
+      "id": "ref_027_s3",
+      "seed": 20260926
+    },
+    "accuracy": 0.8583333333333333,
+    "seconds": 0.8285594080007286,
+    "warnings": []
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "multiscale",
+      "pca": 64,
+      "alpha": 10,
+      "activation": "tanh",
+      "whiten": true,
+      "id": "ref_027_s4",
+      "seed": 20260927
+    },
+    "accuracy": 0.8583333333333333,
+    "seconds": 0.765632855000149,
+    "warnings": []
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 32,
+      "alpha": 1,
+      "rho": 1.0,
+      "id": "ref_036_s1",
+      "seed": 20260924
+    },
+    "accuracy": 0.8666666666666667,
+    "seconds": 0.9087692819994118,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 32,
+      "alpha": 1,
+      "rho": 1.0,
+      "id": "ref_036_s2",
+      "seed": 20260925
+    },
+    "accuracy": 0.8541666666666666,
+    "seconds": 0.9137847899983171,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 32,
+      "alpha": 1,
+      "rho": 1.0,
+      "id": "ref_036_s3",
+      "seed": 20260926
+    },
+    "accuracy": 0.8458333333333333,
+    "seconds": 0.864272898001218,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  },
+  {
+    "config": {
+      "family": "MLP",
+      "feature": "compensated_distribution",
+      "pca": 32,
+      "alpha": 1,
+      "rho": 1.0,
+      "id": "ref_036_s4",
+      "seed": 20260927
+    },
+    "accuracy": 0.8541666666666666,
+    "seconds": 0.873412991000805,
+    "warnings": [
+      "lbfgs failed to converge after 400 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=400).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    ]
+  }
+]

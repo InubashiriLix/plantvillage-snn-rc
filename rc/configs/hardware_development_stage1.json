@@ -1,0 +1,355 @@
+[
+  {
+    "family": "SVM",
+    "feature": "sequence",
+    "C": 1,
+    "gamma": "scale",
+    "id": "dev_000"
+  },
+  {
+    "family": "SVM",
+    "feature": "sequence",
+    "C": 10,
+    "gamma": "scale",
+    "id": "dev_001"
+  },
+  {
+    "family": "SVM",
+    "feature": "sequence",
+    "C": 100,
+    "gamma": "scale",
+    "id": "dev_002"
+  },
+  {
+    "family": "MLP",
+    "feature": "sequence",
+    "pca": 32,
+    "alpha": 0.1,
+    "id": "dev_003"
+  },
+  {
+    "family": "MLP",
+    "feature": "sequence",
+    "pca": 32,
+    "alpha": 1,
+    "id": "dev_004"
+  },
+  {
+    "family": "MLP",
+    "feature": "sequence",
+    "pca": 64,
+    "alpha": 0.1,
+    "id": "dev_005"
+  },
+  {
+    "family": "MLP",
+    "feature": "sequence",
+    "pca": 64,
+    "alpha": 1,
+    "id": "dev_006"
+  },
+  {
+    "family": "SVM",
+    "feature": "distribution",
+    "C": 1,
+    "gamma": "scale",
+    "id": "dev_007"
+  },
+  {
+    "family": "SVM",
+    "feature": "distribution",
+    "C": 10,
+    "gamma": "scale",
+    "id": "dev_008"
+  },
+  {
+    "family": "SVM",
+    "feature": "distribution",
+    "C": 100,
+    "gamma": "scale",
+    "id": "dev_009"
+  },
+  {
+    "family": "MLP",
+    "feature": "distribution",
+    "pca": 32,
+    "alpha": 0.1,
+    "id": "dev_010"
+  },
+  {
+    "family": "MLP",
+    "feature": "distribution",
+    "pca": 32,
+    "alpha": 1,
+    "id": "dev_011"
+  },
+  {
+    "family": "MLP",
+    "feature": "distribution",
+    "pca": 64,
+    "alpha": 0.1,
+    "id": "dev_012"
+  },
+  {
+    "family": "MLP",
+    "feature": "distribution",
+    "pca": 64,
+    "alpha": 1,
+    "id": "dev_013"
+  },
+  {
+    "family": "SVM",
+    "feature": "compensated_distribution",
+    "C": 1,
+    "gamma": "scale",
+    "id": "dev_014"
+  },
+  {
+    "family": "SVM",
+    "feature": "compensated_distribution",
+    "C": 10,
+    "gamma": "scale",
+    "id": "dev_015"
+  },
+  {
+    "family": "SVM",
+    "feature": "compensated_distribution",
+    "C": 100,
+    "gamma": "scale",
+    "id": "dev_016"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 0.1,
+    "id": "dev_017"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 1,
+    "id": "dev_018"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 0.1,
+    "id": "dev_019"
+  },
+  {
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 1,
+    "id": "dev_020"
+  },
+  {
+    "family": "SVM",
+    "feature": "mixed",
+    "C": 1,
+    "gamma": "scale",
+    "id": "dev_021"
+  },
+  {
+    "family": "SVM",
+    "feature": "mixed",
+    "C": 10,
+    "gamma": "scale",
+    "id": "dev_022"
+  },
+  {
+    "family": "SVM",
+    "feature": "mixed",
+    "C": 100,
+    "gamma": "scale",
+    "id": "dev_023"
+  },
+  {
+    "family": "MLP",
+    "feature": "mixed",
+    "pca": 32,
+    "alpha": 0.1,
+    "id": "dev_024"
+  },
+  {
+    "family": "MLP",
+    "feature": "mixed",
+    "pca": 32,
+    "alpha": 1,
+    "id": "dev_025"
+  },
+  {
+    "family": "MLP",
+    "feature": "mixed",
+    "pca": 64,
+    "alpha": 0.1,
+    "id": "dev_026"
+  },
+  {
+    "family": "MLP",
+    "feature": "mixed",
+    "pca": 64,
+    "alpha": 1,
+    "id": "dev_027"
+  },
+  {
+    "family": "SVM",
+    "feature": "multiscale",
+    "C": 1,
+    "gamma": "scale",
+    "id": "dev_028"
+  },
+  {
+    "family": "SVM",
+    "feature": "multiscale",
+    "C": 10,
+    "gamma": "scale",
+    "id": "dev_029"
+  },
+  {
+    "family": "SVM",
+    "feature": "multiscale",
+    "C": 100,
+    "gamma": "scale",
+    "id": "dev_030"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 32,
+    "alpha": 0.1,
+    "id": "dev_031"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 32,
+    "alpha": 1,
+    "id": "dev_032"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 0.1,
+    "id": "dev_033"
+  },
+  {
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 1,
+    "id": "dev_034"
+  },
+  {
+    "family": "RF",
+    "feature": "sequence",
+    "rho": 0.94,
+    "max_features": "sqrt",
+    "id": "dev_035"
+  },
+  {
+    "family": "RF",
+    "feature": "sequence",
+    "rho": 0.94,
+    "max_features": 0.3,
+    "id": "dev_036"
+  },
+  {
+    "family": "ET",
+    "feature": "sequence",
+    "rho": 0.94,
+    "max_features": "sqrt",
+    "id": "dev_037"
+  },
+  {
+    "family": "ET",
+    "feature": "sequence",
+    "rho": 0.94,
+    "max_features": 0.3,
+    "id": "dev_038"
+  },
+  {
+    "family": "RF",
+    "feature": "sequence",
+    "rho": 0.98,
+    "max_features": "sqrt",
+    "id": "dev_039"
+  },
+  {
+    "family": "RF",
+    "feature": "sequence",
+    "rho": 0.98,
+    "max_features": 0.3,
+    "id": "dev_040"
+  },
+  {
+    "family": "ET",
+    "feature": "sequence",
+    "rho": 0.98,
+    "max_features": "sqrt",
+    "id": "dev_041"
+  },
+  {
+    "family": "ET",
+    "feature": "sequence",
+    "rho": 0.98,
+    "max_features": 0.3,
+    "id": "dev_042"
+  },
+  {
+    "family": "RF",
+    "feature": "sequence",
+    "rho": 1.0,
+    "max_features": "sqrt",
+    "id": "dev_043"
+  },
+  {
+    "family": "RF",
+    "feature": "sequence",
+    "rho": 1.0,
+    "max_features": 0.3,
+    "id": "dev_044"
+  },
+  {
+    "family": "ET",
+    "feature": "sequence",
+    "rho": 1.0,
+    "max_features": "sqrt",
+    "id": "dev_045"
+  },
+  {
+    "family": "ET",
+    "feature": "sequence",
+    "rho": 1.0,
+    "max_features": 0.3,
+    "id": "dev_046"
+  },
+  {
+    "family": "RF",
+    "feature": "distribution",
+    "max_features": "sqrt",
+    "id": "dev_047"
+  },
+  {
+    "family": "ET",
+    "feature": "distribution",
+    "max_features": "sqrt",
+    "id": "dev_048"
+  },
+  {
+    "family": "RF",
+    "feature": "multiscale",
+    "max_features": "sqrt",
+    "id": "dev_049"
+  },
+  {
+    "family": "ET",
+    "feature": "multiscale",
+    "max_features": "sqrt",
+    "id": "dev_050"
+  }
+]
