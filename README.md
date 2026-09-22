@@ -6,12 +6,15 @@
 |---|---:|---:|---|
 | ConvSNN 38 类，理想，最终测试 | 90.61% | 87.48% | 8 步 LIF 网络 |
 | ConvSNN 38 类，硬件感知，最终测试 | 81.19% | 75.94% | 实测电导曲线约束的仿真 |
+| ConvSNN Top10，理想，最终测试 | 97.67% | 96.04% | 按 38 类硬件模型验证成绩选类 |
+| ConvSNN Top10，硬件感知，最终测试 | 93.85% | 91.35% | 与 RC10 的类别集合不同 |
 | RC38 v5，验证集 | 79.91% | 77.23% | 未达 80% 宏召回门槛，尚无独立测试集结果 |
 | RC10 v5，冻结测试集 | 97.02% | 96.80% | 从 38 类验证结果筛出的 Top10 |
 
 RC10 是筛选后的类别，不能与完整 38 分类直接横向比较；两条路线的验证划分与选择流程也不同。硬件感知结果均不代表真实芯片部署测量。精确指标及来源见 [results](results/README.md)。
 
 - [convsnn/](convsnn/README.md)：ConvSNN、紧凑 SNN、CNN 参考、器件映射与报告。
+- [SNN 十分类论文绘图数据](results/convsnn10/README.md)：准确率、逐类指标、混淆矩阵和训练曲线，可直接下载用于画图。
 - [rc/](rc/README.md)：RC v1–v5、38 类演进、Top10、训练和导出脚本。
 - [硬件交接示例](rc/hardware_example/README.md)：十类各一张的 640 帧 CSV、标签表及读取规范。
 - [ConvSNN 报告](convsnn/reports/final/PlantVillage_ConvSNN_Final.zh-CN.pdf)、[RC 报告源文件](rc/reports/main.typ)、[RC 公式说明](rc/note.md)。

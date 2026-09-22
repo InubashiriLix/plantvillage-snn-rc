@@ -1,0 +1,1271 @@
+{
+  "ideal": {
+    "source": "artifacts/hardware_refresh_2026-08-06/final/conv_snn_top10_ideal_seed42/metrics.json",
+    "source_sha256": "73bbce2be6da37964783f07ab4a20762144800a8ec4fa847c89a381db0978efd",
+    "best_epoch": 36,
+    "executed_epochs": 56,
+    "final_evaluation": {
+      "checkpoint_retrained": false,
+      "performed_after_selection": true,
+      "sample_limits_cleared": true
+    },
+    "model_cost": {
+      "differential_physical_cells": 311648,
+      "logical_synapses": 155824
+    },
+    "pulse_statistics": null,
+    "conductance_statistics": null,
+    "selection_metrics": {
+      "confusion_matrix": [
+        [
+          219,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          140,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          661,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          51,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          3,
+          0,
+          189,
+          1,
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          12,
+          255,
+          4,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          32,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          94,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          2,
+          3,
+          0,
+          2,
+          3,
+          599,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          640
+        ]
+      ],
+      "inference_cost_per_sample": {
+        "dense_first_layer_macs": 14155776.0,
+        "output_spikes": 8.842069434989789,
+        "spike_driven_synaptic_events_upper_bound": 52034980.61810755
+      },
+      "loss": 1.580599116337713,
+      "macro_recall": 0.9715792195424635,
+      "membrane": {
+        "max": 16.12110137939453,
+        "mean": -4.743547441392955,
+        "min": -29.450611114501953,
+        "std": 5.597475096712077
+      },
+      "per_class": {
+        "Apple___Cedar_apple_rust": {
+          "correct": 32,
+          "index": 6,
+          "precision": 0.8,
+          "recall": 0.9696969696969697,
+          "samples": 33
+        },
+        "Apple___healthy": {
+          "correct": 189,
+          "index": 4,
+          "precision": 0.9264705882352942,
+          "recall": 0.9593908629441624,
+          "samples": 197
+        },
+        "Cherry_(including_sour)___healthy": {
+          "correct": 94,
+          "index": 7,
+          "precision": 0.9690721649484536,
+          "recall": 0.912621359223301,
+          "samples": 103
+        },
+        "Corn_(maize)___Common_rust_": {
+          "correct": 140,
+          "index": 1,
+          "precision": 1.0,
+          "recall": 0.9790209790209791,
+          "samples": 143
+        },
+        "Grape___healthy": {
+          "correct": 51,
+          "index": 3,
+          "precision": 0.9622641509433962,
+          "recall": 1.0,
+          "samples": 51
+        },
+        "Orange___Haunglongbing_(Citrus_greening)": {
+          "correct": 661,
+          "index": 2,
+          "precision": 0.9734904270986745,
+          "recall": 1.0,
+          "samples": 661
+        },
+        "Peach___Bacterial_spot": {
+          "correct": 255,
+          "index": 5,
+          "precision": 0.99609375,
+          "recall": 0.9239130434782609,
+          "samples": 276
+        },
+        "Soybean___healthy": {
+          "correct": 599,
+          "index": 8,
+          "precision": 0.9966722129783694,
+          "recall": 0.9803600654664485,
+          "samples": 611
+        },
+        "Squash___Powdery_mildew": {
+          "correct": 219,
+          "index": 0,
+          "precision": 0.9864864864864865,
+          "recall": 0.9954545454545455,
+          "samples": 220
+        },
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+          "correct": 640,
+          "index": 9,
+          "precision": 0.9907120743034056,
+          "recall": 0.995334370139969,
+          "samples": 643
+        }
+      },
+      "sample_count": 2938,
+      "sample_counts_per_class": [
+        220,
+        143,
+        661,
+        51,
+        197,
+        276,
+        33,
+        103,
+        611,
+        643
+      ],
+      "snn_activity": {
+        "conv1": {
+          "elements_per_sample": 524288.0,
+          "firing_rate": 0.16030260038018795,
+          "neuron_count": 16,
+          "silent_neuron_rate": 0.0,
+          "silent_neurons": 0,
+          "spikes_per_sample": 84044.72974812798
+        },
+        "conv2": {
+          "elements_per_sample": 262144.0,
+          "firing_rate": 0.1644962601632468,
+          "neuron_count": 32,
+          "silent_neuron_rate": 0.0,
+          "silent_neurons": 0,
+          "spikes_per_sample": 43121.70762423417
+        },
+        "conv3": {
+          "elements_per_sample": 131072.0,
+          "firing_rate": 0.17810479275136679,
+          "neuron_count": 64,
+          "silent_neuron_rate": 0.0,
+          "silent_neurons": 0,
+          "spikes_per_sample": 23344.551395507147
+        },
+        "hidden": {
+          "elements_per_sample": 1024.0,
+          "firing_rate": 0.3801055139550715,
+          "neuron_count": 128,
+          "silent_neuron_rate": 0.3515625,
+          "silent_neurons": 45,
+          "spikes_per_sample": 389.2280462899932
+        },
+        "output": {
+          "elements_per_sample": 80.0,
+          "firing_rate": 0.11052586793737236,
+          "neuron_count": 10,
+          "silent_neuron_rate": 0.0,
+          "silent_neurons": 0,
+          "spikes_per_sample": 8.842069434989789
+        }
+      },
+      "split": "selection",
+      "temporal_accuracy": [
+        0.36078965282505104,
+        0.476855003403676,
+        0.7103471749489448,
+        0.8505786249149081,
+        0.9431586113002042,
+        0.9686861810755616,
+        0.9751531654186522,
+        0.9802586793737236
+      ],
+      "top1_accuracy": 0.9802586793737236
+    },
+    "final_test_metrics": {
+      "confusion_matrix": [
+        [
+          367,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          237,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1101,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          78,
+          0,
+          0,
+          1,
+          0,
+          3,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          315,
+          0,
+          5,
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          0,
+          6,
+          0,
+          14,
+          431,
+          6,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          50,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          9,
+          1,
+          0,
+          0,
+          0,
+          157,
+          3,
+          0
+        ],
+        [
+          3,
+          0,
+          4,
+          11,
+          10,
+          0,
+          5,
+          6,
+          978,
+          1
+        ],
+        [
+          0,
+          0,
+          4,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1066
+        ]
+      ],
+      "inference_cost_per_sample": {
+        "dense_first_layer_macs": 14155776.0,
+        "output_spikes": 8.809358398038414,
+        "spike_driven_synaptic_events_upper_bound": 52023424.835308544
+      },
+      "loss": 1.5865993136330727,
+      "macro_recall": 0.9604399472510197,
+      "membrane": {
+        "max": 16.484664916992188,
+        "mean": -4.747366184597849,
+        "min": -29.17460060119629,
+        "std": 5.595574996122446
+      },
+      "per_class": {
+        "Apple___Cedar_apple_rust": {
+          "correct": 50,
+          "index": 6,
+          "precision": 0.746268656716418,
+          "recall": 0.9090909090909091,
+          "samples": 55
+        },
+        "Apple___healthy": {
+          "correct": 315,
+          "index": 4,
+          "precision": 0.9264705882352942,
+          "recall": 0.9574468085106383,
+          "samples": 329
+        },
+        "Cherry_(including_sour)___healthy": {
+          "correct": 157,
+          "index": 7,
+          "precision": 0.9631901840490797,
+          "recall": 0.9235294117647059,
+          "samples": 170
+        },
+        "Corn_(maize)___Common_rust_": {
+          "correct": 237,
+          "index": 1,
+          "precision": 1.0,
+          "recall": 0.9916317991631799,
+          "samples": 239
+        },
+        "Grape___healthy": {
+          "correct": 78,
+          "index": 3,
+          "precision": 0.8666666666666667,
+          "recall": 0.9285714285714286,
+          "samples": 84
+        },
+        "Orange___Haunglongbing_(Citrus_greening)": {
+          "correct": 1101,
+          "index": 2,
+          "precision": 0.9734748010610079,
+          "recall": 0.9990925589836661,
+          "samples": 1102
+        },
+        "Peach___Bacterial_spot": {
+          "correct": 431,
+          "index": 5,
+          "precision": 0.9976851851851852,
+          "recall": 0.9389978213507625,
+          "samples": 459
+        },
+        "Soybean___healthy": {
+          "correct": 978,
+          "index": 8,
+          "precision": 0.9918864097363083,
+          "recall": 0.9607072691552063,
+          "samples": 1018
+        },
+        "Squash___Powdery_mildew": {
+          "correct": 367,
+          "index": 0,
+          "precision": 0.9812834224598931,
+          "recall": 1.0,
+          "samples": 367
+        },
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+          "correct": 1066,
+          "index": 9,
+          "precision": 0.9925512104283054,
+          "recall": 0.9953314659197012,
+          "samples": 1071
+        }
+      },
+      "sample_count": 4894,
+      "sample_counts_per_class": [
+        367,
+        239,
+        1102,
+        84,
+        329,
+        459,
+        55,
+        170,
+        1018,
+        1071
+      ],
+      "snn_activity": {
+        "conv1": {
+          "elements_per_sample": 524288.0,
+          "firing_rate": 0.1601572110792253,
+          "neuron_count": 16,
+          "silent_neuron_rate": 0.0,
+          "silent_neurons": 0,
+          "spikes_per_sample": 83968.50388230487
+        },
+        "conv2": {
+          "elements_per_sample": 262144.0,
+          "firing_rate": 0.16451704994142421,
+          "neuron_count": 32,
+          "silent_neuron_rate": 0.0,
+          "silent_neurons": 0,
+          "spikes_per_sample": 43127.15753984471
+        },
+        "conv3": {
+          "elements_per_sample": 131072.0,
+          "firing_rate": 0.1785373757895909,
+          "neuron_count": 64,
+          "silent_neuron_rate": 0.0,
+          "silent_neurons": 0,
+          "spikes_per_sample": 23401.250919493257
+        },
+        "hidden": {
+          "elements_per_sample": 1024.0,
+          "firing_rate": 0.38016177334491214,
+          "neuron_count": 128,
+          "silent_neuron_rate": 0.34375,
+          "silent_neurons": 44,
+          "spikes_per_sample": 389.28565590519
+        },
+        "output": {
+          "elements_per_sample": 80.0,
+          "firing_rate": 0.11011697997548019,
+          "neuron_count": 10,
+          "silent_neuron_rate": 0.0,
+          "silent_neurons": 0,
+          "spikes_per_sample": 8.809358398038414
+        }
+      },
+      "split": "final_test",
+      "temporal_accuracy": [
+        0.3698406211687781,
+        0.4836534532080098,
+        0.7167960768287699,
+        0.8506334286881896,
+        0.9313445034736412,
+        0.9619942787086228,
+        0.9724152022885165,
+        0.976706170821414
+      ],
+      "top1_accuracy": 0.976706170821414
+    }
+  },
+  "hw_finetune": {
+    "source": "artifacts/hardware_refresh_2026-08-06/final/conv_snn_top10_hw_finetune_seed42/metrics.json",
+    "source_sha256": "32f11237f7044ae8682033c1fa1b2beb4a29c0fe70c902423f96b407bfe75e16",
+    "best_epoch": 3,
+    "executed_epochs": 6,
+    "final_evaluation": {
+      "checkpoint_retrained": false,
+      "performed_after_selection": true,
+      "sample_limits_cleared": true
+    },
+    "model_cost": {
+      "differential_physical_cells": 311648,
+      "logical_synapses": 155824
+    },
+    "pulse_statistics": {
+      "per_layer": {
+        "conv1.weight": {
+          "pulses": 0,
+          "updated_cells": 0,
+          "updated_synapses": 0
+        },
+        "conv2.weight": {
+          "pulses": 0,
+          "updated_cells": 0,
+          "updated_synapses": 0
+        },
+        "conv3.weight": {
+          "pulses": 0,
+          "updated_cells": 0,
+          "updated_synapses": 0
+        },
+        "fc1.weight": {
+          "pulses": 27858,
+          "updated_cells": 8836,
+          "updated_synapses": 5434
+        },
+        "output.weight": {
+          "pulses": 24100,
+          "updated_cells": 6825,
+          "updated_synapses": 5973
+        }
+      },
+      "total_pulses": 51958,
+      "total_updated_cells": 15661,
+      "total_updated_synapses": 11407
+    },
+    "conductance_statistics": {
+      "common_mode_mean": 1.4645391388512508e-07,
+      "common_mode_std": 1.9259253913883612e-11,
+      "conductance_max": 1.9276657781119866e-07,
+      "conductance_mean": 1.4645395651768922e-07,
+      "conductance_min": 1.0014012019610163e-07,
+      "conductance_std": 4.851758106383386e-09,
+      "differential_mean": 5.045900156042116e-11,
+      "differential_std": 9.703308379016562e-09,
+      "histogram": {
+        "conductance_edges": [
+          1.0014012019610163e-07,
+          1.0477144485321332e-07,
+          1.0940276951032502e-07,
+          1.1403408706200935e-07,
+          1.1866541171912104e-07,
+          1.2329672927080537e-07,
+          1.2792806103334442e-07,
+          1.3255937858502875e-07,
+          1.371907103475678e-07,
+          1.4182202789925213e-07,
+          1.4645334545093647e-07,
+          1.5108467721347552e-07,
+          1.5571599476515985e-07,
+          1.6034731231684418e-07,
+          1.6497864407938323e-07,
+          1.6960996163106756e-07,
+          1.742412933936066e-07,
+          1.7887261094529094e-07,
+          1.8350392849697528e-07,
+          1.8813526025951433e-07,
+          1.9276657781119866e-07
+        ],
+        "counts": [
+          3,
+          5,
+          2,
+          28,
+          64,
+          361,
+          1712,
+          8126,
+          32771,
+          112743,
+          112755,
+          32747,
+          8147,
+          1708,
+          364,
+          71,
+          30,
+          3,
+          5,
+          3
+        ]
+      },
+      "logical_synapses": 155824,
+      "mapped_cells": 311648,
+      "mapped_layers": 5,
+      "mapping_mode": "differential_pair",
+      "per_layer": {
+        "conv1.weight": {
+          "common_mode_mean": 1.4645333124008175e-07,
+          "minus_max": 1.773288431650144e-07,
+          "minus_min": 1.2092530710106075e-07,
+          "plus_max": 1.7198138380081218e-07,
+          "plus_min": 1.1557786194771325e-07
+        },
+        "conv2.weight": {
+          "common_mode_mean": 1.4645333124008175e-07,
+          "minus_max": 1.7585425382549147e-07,
+          "minus_min": 1.1557786194771325e-07,
+          "plus_max": 1.773288431650144e-07,
+          "plus_min": 1.1705243707638147e-07
+        },
+        "conv3.weight": {
+          "common_mode_mean": 1.4645333124008175e-07,
+          "minus_max": 1.7489064418896305e-07,
+          "minus_min": 1.1557786194771325e-07,
+          "plus_max": 1.773288431650144e-07,
+          "plus_min": 1.180160609237646e-07
+        },
+        "fc1.weight": {
+          "common_mode_mean": 1.4645348755948362e-07,
+          "minus_max": 1.7609342251034832e-07,
+          "minus_min": 1.1557786194771325e-07,
+          "plus_max": 1.773288431650144e-07,
+          "plus_min": 1.1681327549695197e-07
+        },
+        "output.weight": {
+          "common_mode_mean": 1.4651284629962902e-07,
+          "minus_max": 1.9276657781119866e-07,
+          "minus_min": 1.07116044034683e-07,
+          "plus_max": 1.8550466052147385e-07,
+          "plus_min": 1.0014012019610163e-07
+        }
+      },
+      "physical_cells": 311648,
+      "saturation_high_rate": 3.2087483314508676e-06,
+      "saturation_low_rate": 3.2087483314508676e-06
+    },
+    "selection_metrics": {
+      "confusion_matrix": [
+        [
+          219,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          140,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          656,
+          0,
+          1,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          48,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          2,
+          0,
+          3,
+          0,
+          190,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          6,
+          0,
+          12,
+          0,
+          20,
+          230,
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          1,
+          0,
+          0,
+          0,
+          99,
+          0,
+          0
+        ],
+        [
+          14,
+          0,
+          1,
+          2,
+          7,
+          0,
+          0,
+          17,
+          570,
+          0
+        ],
+        [
+          18,
+          0,
+          19,
+          0,
+          10,
+          1,
+          8,
+          0,
+          1,
+          586
+        ]
+      ],
+      "inference_cost_per_sample": {
+        "dense_first_layer_macs": 14155776.0,
+        "output_spikes": 9.583730428863172,
+        "spike_driven_synaptic_events_upper_bound": 47502644.95643295
+      },
+      "loss": 1.6491893645124909,
+      "macro_recall": 0.9420393917590518,
+      "membrane": {
+        "max": 23.34296417236328,
+        "mean": -6.559450269767912,
+        "min": -34.434043884277344,
+        "std": 7.404775435487598
+      },
+      "per_class": {
+        "Apple___Cedar_apple_rust": {
+          "correct": 30,
+          "index": 6,
+          "precision": 0.6,
+          "recall": 0.9090909090909091,
+          "samples": 33
+        },
+        "Apple___healthy": {
+          "correct": 190,
+          "index": 4,
+          "precision": 0.8333333333333334,
+          "recall": 0.9644670050761421,
+          "samples": 197
+        },
+        "Cherry_(including_sour)___healthy": {
+          "correct": 99,
+          "index": 7,
+          "precision": 0.853448275862069,
+          "recall": 0.9611650485436893,
+          "samples": 103
+        },
+        "Corn_(maize)___Common_rust_": {
+          "correct": 140,
+          "index": 1,
+          "precision": 1.0,
+          "recall": 0.9790209790209791,
+          "samples": 143
+        },
+        "Grape___healthy": {
+          "correct": 48,
+          "index": 3,
+          "precision": 0.9411764705882353,
+          "recall": 0.9411764705882353,
+          "samples": 51
+        },
+        "Orange___Haunglongbing_(Citrus_greening)": {
+          "correct": 656,
+          "index": 2,
+          "precision": 0.9398280802292264,
+          "recall": 0.9924357034795764,
+          "samples": 661
+        },
+        "Peach___Bacterial_spot": {
+          "correct": 230,
+          "index": 5,
+          "precision": 0.9956709956709957,
+          "recall": 0.8333333333333334,
+          "samples": 276
+        },
+        "Soybean___healthy": {
+          "correct": 570,
+          "index": 8,
+          "precision": 0.9895833333333334,
+          "recall": 0.9328968903436988,
+          "samples": 611
+        },
+        "Squash___Powdery_mildew": {
+          "correct": 219,
+          "index": 0,
+          "precision": 0.8358778625954199,
+          "recall": 0.9954545454545455,
+          "samples": 220
+        },
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+          "correct": 586,
+          "index": 9,
+          "precision": 1.0,
+          "recall": 0.911353032659409,
+          "samples": 643
+        }
+      },
+      "sample_count": 2938,
+      "sample_counts_per_class": [
+        220,
+        143,
+        661,
+        51,
+        197,
+        276,
+        33,
+        103,
+        611,
+        643
+      ],
+      "snn_activity": {
+        "conv1": {
+          "elements_per_sample": 524288.0,
+          "firing_rate": 0.1422142375481218,
+          "neuron_count": 16,
+          "silent_neuron_rate": 0.0,
+          "silent_neurons": 0,
+          "spikes_per_sample": 74561.21817562968
+        },
+        "conv2": {
+          "elements_per_sample": 262144.0,
+          "firing_rate": 0.15562982215128277,
+          "neuron_count": 32,
+          "silent_neuron_rate": 0.0,
+          "silent_neurons": 0,
+          "spikes_per_sample": 40797.42409802587
+        },
+        "conv3": {
+          "elements_per_sample": 131072.0,
+          "firing_rate": 0.15054708212066298,
+          "neuron_count": 64,
+          "silent_neuron_rate": 0.0,
+          "silent_neurons": 0,
+          "spikes_per_sample": 19732.507147719538
+        },
+        "hidden": {
+          "elements_per_sample": 1024.0,
+          "firing_rate": 0.38446547662100067,
+          "neuron_count": 128,
+          "silent_neuron_rate": 0.3203125,
+          "silent_neurons": 41,
+          "spikes_per_sample": 393.6926480599047
+        },
+        "output": {
+          "elements_per_sample": 80.0,
+          "firing_rate": 0.11979663036078965,
+          "neuron_count": 10,
+          "silent_neuron_rate": 0.0,
+          "silent_neurons": 0,
+          "spikes_per_sample": 9.583730428863172
+        }
+      },
+      "split": "selection",
+      "temporal_accuracy": [
+        0.19366916269571136,
+        0.3515997277059224,
+        0.5605854322668482,
+        0.7226004084411164,
+        0.8403675970047652,
+        0.908781484002723,
+        0.9309053778080327,
+        0.94213750850919
+      ],
+      "top1_accuracy": 0.94213750850919
+    },
+    "final_test_metrics": {
+      "confusion_matrix": [
+        [
+          367,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          11,
+          226,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1098,
+          0,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          1,
+          70,
+          0,
+          0,
+          1,
+          2,
+          7,
+          0
+        ],
+        [
+          2,
+          0,
+          5,
+          0,
+          317,
+          0,
+          1,
+          0,
+          4,
+          0
+        ],
+        [
+          10,
+          0,
+          25,
+          0,
+          35,
+          367,
+          20,
+          0,
+          0,
+          2
+        ],
+        [
+          4,
+          0,
+          5,
+          0,
+          0,
+          0,
+          46,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0,
+          152,
+          9,
+          0
+        ],
+        [
+          30,
+          0,
+          3,
+          4,
+          16,
+          0,
+          2,
+          19,
+          944,
+          0
+        ],
+        [
+          24,
+          0,
+          18,
+          0,
+          11,
+          0,
+          9,
+          1,
+          2,
+          1006
+        ]
+      ],
+      "inference_cost_per_sample": {
+        "dense_first_layer_macs": 14155776.0,
+        "output_spikes": 9.571311810380058,
+        "spike_driven_synaptic_events_upper_bound": 47471820.94769105
+      },
+      "loss": 1.6627850243642859,
+      "macro_recall": 0.9135499158163141,
+      "membrane": {
+        "max": 23.622812271118164,
+        "mean": -6.555602720546683,
+        "min": -34.5750732421875,
+        "std": 7.390573708046212
+      },
+      "per_class": {
+        "Apple___Cedar_apple_rust": {
+          "correct": 46,
+          "index": 6,
+          "precision": 0.5679012345679012,
+          "recall": 0.8363636363636363,
+          "samples": 55
+        },
+        "Apple___healthy": {
+          "correct": 317,
+          "index": 4,
+          "precision": 0.8320209973753281,
+          "recall": 0.9635258358662614,
+          "samples": 329
+        },
+        "Cherry_(including_sour)___healthy": {
+          "correct": 152,
+          "index": 7,
+          "precision": 0.8735632183908046,
+          "recall": 0.8941176470588236,
+          "samples": 170
+        },
+        "Corn_(maize)___Common_rust_": {
+          "correct": 226,
+          "index": 1,
+          "precision": 1.0,
+          "recall": 0.9456066945606695,
+          "samples": 239
+        },
+        "Grape___healthy": {
+          "correct": 70,
+          "index": 3,
+          "precision": 0.9459459459459459,
+          "recall": 0.8333333333333334,
+          "samples": 84
+        },
+        "Orange___Haunglongbing_(Citrus_greening)": {
+          "correct": 1098,
+          "index": 2,
+          "precision": 0.9424892703862661,
+          "recall": 0.9963702359346642,
+          "samples": 1102
+        },
+        "Peach___Bacterial_spot": {
+          "correct": 367,
+          "index": 5,
+          "precision": 1.0,
+          "recall": 0.7995642701525054,
+          "samples": 459
+        },
+        "Soybean___healthy": {
+          "correct": 944,
+          "index": 8,
+          "precision": 0.9772256728778468,
+          "recall": 0.9273084479371316,
+          "samples": 1018
+        },
+        "Squash___Powdery_mildew": {
+          "correct": 367,
+          "index": 0,
+          "precision": 0.8119469026548672,
+          "recall": 1.0,
+          "samples": 367
+        },
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+          "correct": 1006,
+          "index": 9,
+          "precision": 0.998015873015873,
+          "recall": 0.9393090569561158,
+          "samples": 1071
+        }
+      },
+      "sample_count": 4894,
+      "sample_counts_per_class": [
+        367,
+        239,
+        1102,
+        84,
+        329,
+        459,
+        55,
+        170,
+        1018,
+        1071
+      ],
+      "snn_activity": {
+        "conv1": {
+          "elements_per_sample": 524288.0,
+          "firing_rate": 0.1420158753358056,
+          "neuron_count": 16,
+          "silent_neuron_rate": 0.0,
+          "silent_neurons": 0,
+          "spikes_per_sample": 74457.21924805884
+        },
+        "conv2": {
+          "elements_per_sample": 262144.0,
+          "firing_rate": 0.15558885777780948,
+          "neuron_count": 32,
+          "silent_neuron_rate": 0.0,
+          "silent_neurons": 0,
+          "spikes_per_sample": 40786.68553330609
+        },
+        "conv3": {
+          "elements_per_sample": 131072.0,
+          "firing_rate": 0.15086368019842936,
+          "neuron_count": 64,
+          "silent_neuron_rate": 0.0,
+          "silent_neurons": 0,
+          "spikes_per_sample": 19774.004290968533
+        },
+        "hidden": {
+          "elements_per_sample": 1024.0,
+          "firing_rate": 0.38460818572486716,
+          "neuron_count": 128,
+          "silent_neuron_rate": 0.3125,
+          "silent_neurons": 40,
+          "spikes_per_sample": 393.83878218226397
+        },
+        "output": {
+          "elements_per_sample": 80.0,
+          "firing_rate": 0.11964139762975072,
+          "neuron_count": 10,
+          "silent_neuron_rate": 0.0,
+          "silent_neurons": 0,
+          "spikes_per_sample": 9.571311810380058
+        }
+      },
+      "split": "final_test",
+      "temporal_accuracy": [
+        0.1779730281977932,
+        0.3469554556599918,
+        0.5490396403759705,
+        0.7059664895790764,
+        0.8271352676747037,
+        0.8921127911728647,
+        0.9223539027380466,
+        0.9384961176951369
+      ],
+      "top1_accuracy": 0.9384961176951369
+    }
+  }
+}

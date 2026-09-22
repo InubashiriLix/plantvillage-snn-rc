@@ -1,0 +1,11 @@
+name,new_index,original_index,selection_precision,selection_recall
+Squash___Powdery_mildew,0,25,0.43478260869565216,1.0
+Corn_(maize)___Common_rust_,1,8,0.9591836734693877,0.986013986013986
+Orange___Haunglongbing_(Citrus_greening),2,15,0.9510385756676558,0.9697428139183056
+Grape___healthy,3,14,0.6,0.9411764705882353
+Apple___healthy,4,3,0.575,0.934010152284264
+Peach___Bacterial_spot,5,16,0.8382838283828383,0.9202898550724637
+Apple___Cedar_apple_rust,6,2,0.3191489361702128,0.9090909090909091
+Cherry_(including_sour)___healthy,7,6,1.0,0.8932038834951457
+Soybean___healthy,8,24,0.9855334538878843,0.8919803600654664
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,9,35,0.9629629629629629,0.8895800933125972

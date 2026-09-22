@@ -1,0 +1,33 @@
+{
+  "source_project": "original PlantVillage project",
+  "source_files_sha256": {
+    "artifacts/hardware_refresh_2026-08-06/top10_classes.json": "a2b2721976c50d8bcaf52b3cec094f01516af5a8354866ab225e76ac32b6f591",
+    "artifacts/hardware_refresh_2026-08-06/final/conv_snn_top10_ideal_seed42/metrics.json": "73bbce2be6da37964783f07ab4a20762144800a8ec4fa847c89a381db0978efd",
+    "artifacts/hardware_refresh_2026-08-06/final/conv_snn_top10_ideal_seed42/records/selection_predictions.csv": "0a28d15d934987ebe74531d20291634ea930408904f80f8dc33d96f9fa512539",
+    "artifacts/hardware_refresh_2026-08-06/final/conv_snn_top10_ideal_seed42/records/final_predictions.csv": "f4bfb3b5bae57ff8d380b17134040421b74cfc789d4cc6e6d4bbe606016d6a93",
+    "artifacts/hardware_refresh_2026-08-06/final/conv_snn_top10_ideal_seed42/records/epoch_metrics.csv": "d49c4301a263e5b2f9097b3f69ee45a8cbd22c3903c08a7b2a0a7274cab67566",
+    "artifacts/hardware_refresh_2026-08-06/final/conv_snn_top10_hw_finetune_seed42/metrics.json": "32f11237f7044ae8682033c1fa1b2beb4a29c0fe70c902423f96b407bfe75e16",
+    "artifacts/hardware_refresh_2026-08-06/final/conv_snn_top10_hw_finetune_seed42/records/selection_predictions.csv": "d20edadd5f93a5628cff043361e4ab9575f9782ce94d33a546a6fff1287a28f6",
+    "artifacts/hardware_refresh_2026-08-06/final/conv_snn_top10_hw_finetune_seed42/records/final_predictions.csv": "b6f142588ed9aadbf78cec2bdfaa5193979927dc33b4d4502e5932b1db4d2e18",
+    "artifacts/hardware_refresh_2026-08-06/final/conv_snn_top10_hw_finetune_seed42/records/epoch_metrics.csv": "fcf324d2a19b939e9633eca819a4a009db862b8144d95cd01f91dc55b31890c5"
+  },
+  "class_selection": {
+    "ranking_metric": "selection_validation_per_class_recall",
+    "tie_breakers": [
+      "precision_descending",
+      "class_name_ascending"
+    ],
+    "source_metrics": "artifacts/hardware_refresh_2026-08-06/final/conv_snn_all38_hw_finetune_seed42/metrics.json",
+    "source_metrics_sha256": "4aae929670fa2f6be99b742f805f74f75bc1c350eb2a9a2bffc37eef265bb2cb"
+  },
+  "validation": "Both selection and final_test confusion matrices reconciled against per-image predictions; accuracy, macro recall, precision and supports recomputed.",
+  "files_sha256": {
+    "class_mapping.csv": "dcc7a903dd6f558158f74fe17be6540f80f1e4dd990ee99277b8d8d45054ee8c",
+    "confusion_matrix_long.csv": "566ccbffbbc2f91b67dd28b25b8934b18b242ca52872bc7ef255a8b8e2772a7b",
+    "epoch_metrics.csv": "04b1941b121d5a9ef5f27511ad2b063e281775ddf63cf297a0df99d69415645a",
+    "metrics.json": "35598b6ef5ae31d8a6dfa6974caa63744af5644d78e31ab2b525130be8048b90",
+    "per_class_metrics.csv": "40b53f49df02a710d2d73956def91100e3721ddb1f94308a76b10e443562421a",
+    "summary.csv": "dbbbcbb3e3eff4f5bdabf66528880d0741c3a7eb807ea5c23ab10200fb92869f",
+    "temporal_accuracy.csv": "c34e53239e1e99ba73572cdf60084c2cbca6e0a62d87f34e3ac6577690309b07"
+  }
+}
