@@ -1,0 +1,390 @@
+[
+  {
+    "id": "v3_000",
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 0.1,
+    "hidden": 64,
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_001",
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 1,
+    "hidden": 64,
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_002",
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 10,
+    "hidden": 64,
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_003",
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 1,
+    "hidden": 128,
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_004",
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "alpha": 1,
+    "hidden": [
+      64,
+      32
+    ],
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_005",
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 0.1,
+    "hidden": 64,
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_006",
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 1,
+    "hidden": 64,
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_007",
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 10,
+    "hidden": 64,
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_008",
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 1,
+    "hidden": 128,
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_009",
+    "family": "MLP",
+    "feature": "compensated_distribution",
+    "pca": 64,
+    "alpha": 1,
+    "hidden": [
+      64,
+      32
+    ],
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_010",
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 32,
+    "alpha": 0.1,
+    "hidden": 64,
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_011",
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 32,
+    "alpha": 1,
+    "hidden": 64,
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_012",
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 32,
+    "alpha": 10,
+    "hidden": 64,
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_013",
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 32,
+    "alpha": 1,
+    "hidden": 128,
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_014",
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 32,
+    "alpha": 1,
+    "hidden": [
+      64,
+      32
+    ],
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_015",
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 0.1,
+    "hidden": 64,
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_016",
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 1,
+    "hidden": 64,
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_017",
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 10,
+    "hidden": 64,
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_018",
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 1,
+    "hidden": 128,
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_019",
+    "family": "MLP",
+    "feature": "multiscale",
+    "pca": 64,
+    "alpha": 1,
+    "hidden": [
+      64,
+      32
+    ],
+    "max_iter": 1200,
+    "max_fun": 50000
+  },
+  {
+    "id": "v3_020",
+    "family": "ET",
+    "feature": "sequence",
+    "max_features": "sqrt",
+    "trees": 600,
+    "leaf": 1
+  },
+  {
+    "id": "v3_021",
+    "family": "ET",
+    "feature": "sequence",
+    "max_features": "sqrt",
+    "trees": 600,
+    "leaf": 2
+  },
+  {
+    "id": "v3_022",
+    "family": "ET",
+    "feature": "sequence",
+    "max_features": 0.3,
+    "trees": 600,
+    "leaf": 1
+  },
+  {
+    "id": "v3_023",
+    "family": "ET",
+    "feature": "sequence",
+    "max_features": 0.3,
+    "trees": 600,
+    "leaf": 2
+  },
+  {
+    "id": "v3_024",
+    "family": "RF",
+    "feature": "sequence",
+    "max_features": "sqrt",
+    "trees": 600,
+    "leaf": 1
+  },
+  {
+    "id": "v3_025",
+    "family": "RF",
+    "feature": "sequence",
+    "max_features": "sqrt",
+    "trees": 600,
+    "leaf": 2
+  },
+  {
+    "id": "v3_026",
+    "family": "RF",
+    "feature": "sequence",
+    "max_features": 0.3,
+    "trees": 600,
+    "leaf": 1
+  },
+  {
+    "id": "v3_027",
+    "family": "RF",
+    "feature": "sequence",
+    "max_features": 0.3,
+    "trees": 600,
+    "leaf": 2
+  },
+  {
+    "id": "v3_028",
+    "family": "ET",
+    "feature": "multiscale",
+    "max_features": "sqrt",
+    "trees": 600,
+    "leaf": 1
+  },
+  {
+    "id": "v3_029",
+    "family": "ET",
+    "feature": "multiscale",
+    "max_features": "sqrt",
+    "trees": 600,
+    "leaf": 2
+  },
+  {
+    "id": "v3_030",
+    "family": "ET",
+    "feature": "multiscale",
+    "max_features": 0.3,
+    "trees": 600,
+    "leaf": 1
+  },
+  {
+    "id": "v3_031",
+    "family": "ET",
+    "feature": "multiscale",
+    "max_features": 0.3,
+    "trees": 600,
+    "leaf": 2
+  },
+  {
+    "id": "v3_032",
+    "family": "RF",
+    "feature": "multiscale",
+    "max_features": "sqrt",
+    "trees": 600,
+    "leaf": 1
+  },
+  {
+    "id": "v3_033",
+    "family": "RF",
+    "feature": "multiscale",
+    "max_features": "sqrt",
+    "trees": 600,
+    "leaf": 2
+  },
+  {
+    "id": "v3_034",
+    "family": "RF",
+    "feature": "multiscale",
+    "max_features": 0.3,
+    "trees": 600,
+    "leaf": 1
+  },
+  {
+    "id": "v3_035",
+    "family": "RF",
+    "feature": "multiscale",
+    "max_features": 0.3,
+    "trees": 600,
+    "leaf": 2
+  },
+  {
+    "id": "v3_036",
+    "family": "SVM",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "C": 1,
+    "gamma": "scale"
+  },
+  {
+    "id": "v3_037",
+    "family": "SVM",
+    "feature": "multiscale",
+    "pca": 32,
+    "C": 1,
+    "gamma": "scale"
+  },
+  {
+    "id": "v3_038",
+    "family": "SVM",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "C": 10,
+    "gamma": "scale"
+  },
+  {
+    "id": "v3_039",
+    "family": "SVM",
+    "feature": "multiscale",
+    "pca": 32,
+    "C": 10,
+    "gamma": "scale"
+  },
+  {
+    "id": "v3_040",
+    "family": "SVM",
+    "feature": "compensated_distribution",
+    "pca": 32,
+    "C": 100,
+    "gamma": "scale"
+  },
+  {
+    "id": "v3_041",
+    "family": "SVM",
+    "feature": "multiscale",
+    "pca": 32,
+    "C": 100,
+    "gamma": "scale"
+  }
+]

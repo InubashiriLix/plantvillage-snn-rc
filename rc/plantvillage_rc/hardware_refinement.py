@@ -72,8 +72,12 @@ def build_refined_model(config):
         # Multipliers relative to feature dimension, avoiding an over-narrow high-D kernel.
         model = SVC(C=config["C"], gamma=config["gamma"], probability=True, random_state=20260923)
     elif family == "MLP":
-        model = MLPClassifier(hidden_layer_sizes=(config.get("hidden", 64),), solver="lbfgs", alpha=config["alpha"],
-                              activation=config.get("activation", "relu"), max_iter=400, max_fun=20000,
+        hidden = config.get("hidden", 64)
+        if isinstance(hidden, list):
+            hidden = tuple(hidden)
+        model = MLPClassifier(hidden_layer_sizes=hidden, solver="lbfgs", alpha=config["alpha"],
+                              activation=config.get("activation", "relu"),
+                              max_iter=config.get("max_iter", 400), max_fun=config.get("max_fun", 20000),
                               random_state=config.get("seed", 20260923))
     elif family in ("RF", "ET"):
         cls = RandomForestClassifier if family == "RF" else ExtraTreesClassifier

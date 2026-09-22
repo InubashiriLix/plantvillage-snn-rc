@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "route": "pure_measured_current_only",
+  "sample_count": 300,
+  "prediction_count": 900,
+  "independent_test_available": false,
+  "mean_accuracy": 0.8833333333333333,
+  "std_accuracy": 0.013333333333333308,
+  "mean_macro_f1": 0.8820337612324195,
+  "mean_macro_recall": 0.8833333333333332,
+  "repeats": [
+    {
+      "seed": 20260909,
+      "accuracy": 0.8833333333333333,
+      "macro_f1": 0.881702488914169,
+      "macro_recall": 0.8833333333333332,
+      "correct": 265,
+      "sample_count": 300
+    },
+    {
+      "seed": 20260910,
+      "accuracy": 0.8966666666666666,
+      "macro_f1": 0.8952600427987107,
+      "macro_recall": 0.8966666666666667,
+      "correct": 269,
+      "sample_count": 300
+    },
+    {
+      "seed": 20260911,
+      "accuracy": 0.87,
+      "macro_f1": 0.869138751984379,
+      "macro_recall": 0.8699999999999999,
+      "correct": 261,
+      "sample_count": 300
+    }
+  ],
+  "baseline_v2_mean_accuracy": 0.9088888888888889,
+  "historical_mean_accuracy": 0.9044444444444445,
+  "mean_accuracy_delta_vs_v2": -0.025555555555555554,
+  "mean_accuracy_delta_vs_historical": -0.02111111111111119,
+  "improved_over_v2": false,
+  "candidate_count": 42,
+  "outer_folds": 15,
+  "notes": [
+    "All 300 samples and all ten classes retained.",
+    "No optical input was passed to model fitting or prediction.",
+    "No independent test set; these are repeated outer-fold estimates on the explored batch.",
+    "The v2 pipeline remains the recommended model because v3 is lower."
+  ]
+}

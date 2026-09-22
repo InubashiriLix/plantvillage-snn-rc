@@ -1,7 +1,7 @@
 name: tests
 on:
   push:
-    branches: [main]
+    branches: [main, 'feat/hardware300-v3']
   pull_request:
     branches: [main]
 permissions:
