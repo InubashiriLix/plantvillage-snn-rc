@@ -1,0 +1,94 @@
+{
+  "sample_count": 300,
+  "response_shape": [
+    300,
+    9,
+    12,
+    65
+  ],
+  "channels": [
+    "R",
+    "G",
+    "B",
+    "ON-red",
+    "ON-green",
+    "ON-blue",
+    "OFF-red",
+    "OFF-green",
+    "OFF-blue"
+  ],
+  "classes": [
+    "Blueberry___healthy",
+    "Cherry_(including_sour)___healthy",
+    "Corn_(maize)___Common_rust_",
+    "Corn_(maize)___healthy",
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+    "Orange___Haunglongbing_(Citrus_greening)",
+    "Peach___healthy",
+    "Soybean___healthy",
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+    "Tomato___healthy"
+  ],
+  "class_counts": [
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30,
+    30
+  ],
+  "source_sha256": {
+    "responses": "3ab3dbccd5f0fa179be13c527c4b6b715ac120a103474ead9cd4e4de1aaf432e",
+    "inputs": "6c00725801c98668cbbe30ff76fc30c3d49f739955a1830df90305238f8610c8",
+    "workbook": "6e72956c9d86d00e149b391323fb152c26dfab36e82d077789ddbdb46deb215b"
+  },
+  "range_amperes": [
+    -1.4641119791e-05,
+    2.513567708e-06
+  ],
+  "constant_columns": 0,
+  "mean_inter_row_correlations": {
+    "R": 0.9768966907841106,
+    "G": 0.9735366086833039,
+    "B": 0.9750576763739617,
+    "ON-red": 0.9301484473605387,
+    "ON-green": 0.9290420816195188,
+    "ON-blue": 0.9199123126939315,
+    "OFF-red": 0.9132003570855554,
+    "OFF-green": 0.9212236559647583,
+    "OFF-blue": 0.895739564057436
+  },
+  "historical_scores": [
+    {
+      "seed": 20260909,
+      "accuracy": 0.8933333333333333,
+      "macro_f1": 0.8923014402355568,
+      "macro_recall": 0.8933333333333333,
+      "correct": 268,
+      "sample_count": 300
+    },
+    {
+      "seed": 20260910,
+      "accuracy": 0.9166666666666666,
+      "macro_f1": 0.9158722187399302,
+      "macro_recall": 0.9166666666666667,
+      "correct": 275,
+      "sample_count": 300
+    },
+    {
+      "seed": 20260911,
+      "accuracy": 0.9033333333333333,
+      "macro_f1": 0.9026098790012492,
+      "macro_recall": 0.9033333333333335,
+      "correct": 271,
+      "sample_count": 300
+    }
+  ],
+  "historical_mean_accuracy": 0.9044444444444445,
+  "independent_test_available": false,
+  "baseline_training_code_available": false
+}

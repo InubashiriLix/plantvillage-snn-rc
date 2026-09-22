@@ -1,0 +1,142 @@
+{
+  "selected": {
+    "members": [
+      "ExtraTrees_05"
+    ],
+    "weights": [
+      1.0
+    ],
+    "scores": {
+      "accuracy": 0.83,
+      "macro_f1": 0.8265267855292244,
+      "macro_recall": 0.8299999999999998,
+      "correct": 249,
+      "sample_count": 300
+    },
+    "kind": "single"
+  },
+  "options": [
+    {
+      "members": [
+        "ExtraTrees_05"
+      ],
+      "weights": [
+        1.0
+      ],
+      "scores": {
+        "accuracy": 0.83,
+        "macro_f1": 0.8265267855292244,
+        "macro_recall": 0.8299999999999998,
+        "correct": 249,
+        "sample_count": 300
+      },
+      "kind": "single"
+    },
+    {
+      "members": [
+        "ExtraTrees_05"
+      ],
+      "weights": [
+        1.0
+      ],
+      "scores": {
+        "accuracy": 0.83,
+        "macro_f1": 0.8265267855292244,
+        "macro_recall": 0.8299999999999998,
+        "correct": 249,
+        "sample_count": 300
+      },
+      "kind": "single"
+    },
+    {
+      "members": [
+        "ExtraTrees_05",
+        "MLP_05"
+      ],
+      "weights": [
+        0.8,
+        0.2
+      ],
+      "scores": {
+        "accuracy": 0.7566666666666667,
+        "macro_f1": 0.7523160654099645,
+        "macro_recall": 0.7566666666666666,
+        "correct": 227,
+        "sample_count": 300
+      },
+      "kind": "ensemble"
+    },
+    {
+      "members": [
+        "ExtraTrees_05",
+        "MLP_05"
+      ],
+      "weights": [
+        0.6,
+        0.4
+      ],
+      "scores": {
+        "accuracy": 0.7133333333333334,
+        "macro_f1": 0.7118898956924598,
+        "macro_recall": 0.7133333333333333,
+        "correct": 214,
+        "sample_count": 300
+      },
+      "kind": "ensemble"
+    },
+    {
+      "members": [
+        "ExtraTrees_05",
+        "MLP_05"
+      ],
+      "weights": [
+        0.4,
+        0.6
+      ],
+      "scores": {
+        "accuracy": 0.6833333333333333,
+        "macro_f1": 0.6804751953194772,
+        "macro_recall": 0.6833333333333332,
+        "correct": 205,
+        "sample_count": 300
+      },
+      "kind": "ensemble"
+    },
+    {
+      "members": [
+        "ExtraTrees_05",
+        "MLP_05"
+      ],
+      "weights": [
+        0.19999999999999996,
+        0.8
+      ],
+      "scores": {
+        "accuracy": 0.6633333333333333,
+        "macro_f1": 0.6605947755049225,
+        "macro_recall": 0.6633333333333333,
+        "correct": 199,
+        "sample_count": 300
+      },
+      "kind": "ensemble"
+    },
+    {
+      "members": [
+        "MLP_05"
+      ],
+      "weights": [
+        1.0
+      ],
+      "scores": {
+        "accuracy": 0.65,
+        "macro_f1": 0.6463683625368366,
+        "macro_recall": 0.65,
+        "correct": 195,
+        "sample_count": 300
+      },
+      "kind": "single"
+    }
+  ],
+  "training_samples": 300,
+  "note": "All-data CV chooses a delivery configuration; it is not an independent test score."
+}

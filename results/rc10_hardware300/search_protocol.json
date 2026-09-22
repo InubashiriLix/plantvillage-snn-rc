@@ -1,0 +1,471 @@
+{
+  "format_version": 1,
+  "data_hashes": {
+    "responses": "3ab3dbccd5f0fa179be13c527c4b6b715ac120a103474ead9cd4e4de1aaf432e",
+    "inputs": "6c00725801c98668cbbe30ff76fc30c3d49f739955a1830df90305238f8610c8",
+    "workbook": "6e72956c9d86d00e149b391323fb152c26dfab36e82d077789ddbdb46deb215b"
+  },
+  "candidates": [
+    {
+      "id": "Ridge_00",
+      "family": "Ridge",
+      "feature": "compensated_098",
+      "parameters": {
+        "alpha": 1.0
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "Ridge_01",
+      "family": "Ridge",
+      "feature": "mean_std",
+      "parameters": {
+        "alpha": 10.0
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "Ridge_02",
+      "family": "Ridge",
+      "feature": "full",
+      "parameters": {
+        "alpha": 1.0
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "Ridge_03",
+      "family": "Ridge",
+      "feature": "spatial",
+      "parameters": {
+        "alpha": 10.0
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "Ridge_04",
+      "family": "Ridge",
+      "feature": "compensated_090",
+      "parameters": {
+        "alpha": 100.0
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "Ridge_05",
+      "family": "Ridge",
+      "feature": "compensated_100",
+      "parameters": {
+        "alpha": 0.01
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "SVM_RBF_00",
+      "family": "SVM_RBF",
+      "feature": "compensated_098",
+      "parameters": {
+        "C": 100.0,
+        "gamma": 0.01
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "SVM_RBF_01",
+      "family": "SVM_RBF",
+      "feature": "median",
+      "parameters": {
+        "C": 1.0,
+        "gamma": 0.1
+      },
+      "pca_components": 32,
+      "seed": 20260922
+    },
+    {
+      "id": "SVM_RBF_02",
+      "family": "SVM_RBF",
+      "feature": "compensated_090",
+      "parameters": {
+        "C": 1.0,
+        "gamma": "scale"
+      },
+      "pca_components": 32,
+      "seed": 20260922
+    },
+    {
+      "id": "SVM_RBF_03",
+      "family": "SVM_RBF",
+      "feature": "spatial",
+      "parameters": {
+        "C": 0.1,
+        "gamma": 0.001
+      },
+      "pca_components": 64,
+      "seed": 20260922
+    },
+    {
+      "id": "SVM_RBF_04",
+      "family": "SVM_RBF",
+      "feature": "mean_std",
+      "parameters": {
+        "C": 0.1,
+        "gamma": 0.01
+      },
+      "pca_components": 64,
+      "seed": 20260922
+    },
+    {
+      "id": "SVM_RBF_05",
+      "family": "SVM_RBF",
+      "feature": "full",
+      "parameters": {
+        "C": 0.1,
+        "gamma": 0.1
+      },
+      "pca_components": 32,
+      "seed": 20260922
+    },
+    {
+      "id": "RandomForest_00",
+      "family": "RandomForest",
+      "feature": "compensated_090",
+      "parameters": {
+        "n_estimators": 400,
+        "min_samples_leaf": 1,
+        "max_features": 0.3
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "RandomForest_01",
+      "family": "RandomForest",
+      "feature": "mean_std",
+      "parameters": {
+        "n_estimators": 400,
+        "min_samples_leaf": 4,
+        "max_features": 1.0
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "RandomForest_02",
+      "family": "RandomForest",
+      "feature": "spatial",
+      "parameters": {
+        "n_estimators": 400,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "RandomForest_03",
+      "family": "RandomForest",
+      "feature": "compensated_100",
+      "parameters": {
+        "n_estimators": 400,
+        "min_samples_leaf": 4,
+        "max_features": 0.3
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "RandomForest_04",
+      "family": "RandomForest",
+      "feature": "full",
+      "parameters": {
+        "n_estimators": 400,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "RandomForest_05",
+      "family": "RandomForest",
+      "feature": "compensated_098",
+      "parameters": {
+        "n_estimators": 400,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt"
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "ExtraTrees_00",
+      "family": "ExtraTrees",
+      "feature": "mean_std",
+      "parameters": {
+        "n_estimators": 400,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "ExtraTrees_01",
+      "family": "ExtraTrees",
+      "feature": "spatial",
+      "parameters": {
+        "n_estimators": 400,
+        "min_samples_leaf": 4,
+        "max_features": 0.3
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "ExtraTrees_02",
+      "family": "ExtraTrees",
+      "feature": "median",
+      "parameters": {
+        "n_estimators": 400,
+        "min_samples_leaf": 4,
+        "max_features": 0.3
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "ExtraTrees_03",
+      "family": "ExtraTrees",
+      "feature": "compensated_090",
+      "parameters": {
+        "n_estimators": 400,
+        "min_samples_leaf": 4,
+        "max_features": 1.0
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "ExtraTrees_04",
+      "family": "ExtraTrees",
+      "feature": "compensated_100",
+      "parameters": {
+        "n_estimators": 400,
+        "min_samples_leaf": 4,
+        "max_features": "sqrt"
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "ExtraTrees_05",
+      "family": "ExtraTrees",
+      "feature": "compensated_098",
+      "parameters": {
+        "n_estimators": 400,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt"
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "HistBoost_00",
+      "family": "HistBoost",
+      "feature": "compensated_098",
+      "parameters": {
+        "max_iter": 200,
+        "max_bins": 32,
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 1.0
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "HistBoost_01",
+      "family": "HistBoost",
+      "feature": "spatial",
+      "parameters": {
+        "max_iter": 200,
+        "max_bins": 32,
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 7,
+        "l2_regularization": 0.1
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "HistBoost_02",
+      "family": "HistBoost",
+      "feature": "mean_std",
+      "parameters": {
+        "max_iter": 200,
+        "max_bins": 32,
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 0.1
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "HistBoost_03",
+      "family": "HistBoost",
+      "feature": "compensated_100",
+      "parameters": {
+        "max_iter": 200,
+        "max_bins": 32,
+        "learning_rate": 0.03,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 0.1
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "HistBoost_04",
+      "family": "HistBoost",
+      "feature": "median",
+      "parameters": {
+        "max_iter": 200,
+        "max_bins": 32,
+        "learning_rate": 0.03,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 10.0
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "HistBoost_05",
+      "family": "HistBoost",
+      "feature": "compensated_090",
+      "parameters": {
+        "max_iter": 200,
+        "max_bins": 32,
+        "learning_rate": 0.03,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 1.0
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "MLP_00",
+      "family": "MLP",
+      "feature": "median",
+      "parameters": {
+        "hidden_layer_sizes": [
+          64
+        ],
+        "alpha": 0.1,
+        "max_iter": 300
+      },
+      "pca_components": 64,
+      "seed": 20260922
+    },
+    {
+      "id": "MLP_01",
+      "family": "MLP",
+      "feature": "mean_std",
+      "parameters": {
+        "hidden_layer_sizes": [
+          64
+        ],
+        "alpha": 0.1,
+        "max_iter": 300
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "MLP_02",
+      "family": "MLP",
+      "feature": "full",
+      "parameters": {
+        "hidden_layer_sizes": [
+          64
+        ],
+        "alpha": 1.0,
+        "max_iter": 300
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "MLP_03",
+      "family": "MLP",
+      "feature": "compensated_100",
+      "parameters": {
+        "hidden_layer_sizes": [
+          64
+        ],
+        "alpha": 1.0,
+        "max_iter": 300
+      },
+      "pca_components": 32,
+      "seed": 20260922
+    },
+    {
+      "id": "MLP_04",
+      "family": "MLP",
+      "feature": "compensated_098",
+      "parameters": {
+        "hidden_layer_sizes": [
+          128,
+          32
+        ],
+        "alpha": 0.01,
+        "max_iter": 300
+      },
+      "pca_components": null,
+      "seed": 20260922
+    },
+    {
+      "id": "MLP_05",
+      "family": "MLP",
+      "feature": "compensated_090",
+      "parameters": {
+        "hidden_layer_sizes": [
+          64
+        ],
+        "alpha": 1.0,
+        "max_iter": 300
+      },
+      "pca_components": null,
+      "seed": 20260922
+    }
+  ],
+  "repeat_seeds": [
+    20260909,
+    20260910,
+    20260911
+  ],
+  "inner_folds": 3,
+  "probability_mlp_weights": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "code_hashes": {
+    "hardware_data.py": "5d1fa8dcafa09ce40c020aa29d236c8f7d6f7231716f81fd14a17ce63a7ae568",
+    "hardware_models.py": "825901026e947f1ae86d0393701e66b71ab80e71a9a0a0d43641a63f11c6434d",
+    "hardware_learning.py": "ee81b812233b09567fe482178bd1db5436e7828c604822ab51baca3277160817"
+  },
+  "sklearn_version": "1.8.0",
+  "numpy_version": "2.4.3",
+  "python_version": "3.11.15"
+}

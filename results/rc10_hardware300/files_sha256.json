@@ -1,0 +1,23 @@
+{
+  "README.md": "0fd72953d2c2e1726ec64b32a5253b21da31c1ae80dc1f2997d90430af241cd4",
+  "audit.json": "187db232471f9ad057d26bb7a4ba4a21d0ccf9779202d563c9e8a2be847723f0",
+  "confusion_matrix_long.csv": "2364d7d9640df3b2e48f360606009ca0d228bcf7415aaa9a22b99a789cc98b3f",
+  "delivery_model.json": "7c76818e4df57ac5c224150edbaf2d6c5ba789bee5bb392ad042350f5489f94c",
+  "error_diagnostics.json": "37c43495edc509f369d57bee5418980d185dfeb40bd08b1e49beed7b41872aad",
+  "figures/accuracy_comparison.png": "f7695be0af327bdf7bf433579c81f0dfa52102b9f4d721afaad1d55ff6996d77",
+  "figures/accuracy_comparison.svg": "f4191b8962897e7a591550abc68714eb26c13c949e1bc31e48c9f0487e79614d",
+  "figures/confusion_comparison.png": "4d5c8a28ff3b45c71803e7e65190501bca7081dd009bbc26f865c87491424bf3",
+  "figures/confusion_comparison.svg": "28a10458e19d019d068cd61dfbf17279cfffed0cb0180f3cd72c3ea23e673ae5",
+  "figures/hardware_diagnostics.png": "5cab6ff586b5df259941a219516994c7b05c0fe062422b2c772ad5e887a4f369",
+  "figures/hardware_diagnostics.svg": "3e123f2909a25f8d09e652773a4723147a8e8044be44f94ca7f0f908cff740cb",
+  "figures/per_class_recall.png": "69e0a3434fd6017ab758f762c229f8395fe3268192a0323fcbb8a302fc136a35",
+  "figures/per_class_recall.svg": "663c90e7470e2bb1f4d9ed519b2da99587729689aaf9f231d5314241c8e519b2",
+  "fold_selections.csv": "9253241727adf0c95ec6ff9f175d96ee20a600d704476502e888794324f3098f",
+  "paired_changes.csv": "bd33281140b6e8dcd03d3f992de8f1ff85d4dd76ece7dad85f4654fc63bfae88",
+  "per_class_metrics.csv": "fc2c7ab77d213d902d2cd542df1888f7fe3733e0c2911ffa855ebe9bd5e8b878",
+  "repeat_metrics.csv": "71050a6ce00e210191b763859f69f42346e32550fede4e67961d4d986524307b",
+  "requirements-reproduce.txt": "c08c6d9c7ab16ba0120fc0b67fffaa93496bd3b3c161b4cd361b1303f077d8aa",
+  "search_protocol.json": "6d3fc5629051017dd369fb457957d1009c89f029e49518745b0f7fd276a6fa77",
+  "summary.json": "46e7181cda24b839b05eac78acae99aef97cec5380d3929fc7469b37f84d9a49",
+  "unit_diagnostic.csv": "0e2da274ed930b631f33af0a34233fd0b4d5a30f195a1e5fb01cf831dbbb44e0"
+}

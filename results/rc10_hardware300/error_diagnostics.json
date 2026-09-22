@@ -1,0 +1,21 @@
+{
+  "groups": [
+    {
+      "group": "historical_always_wrong",
+      "sample_count": 14,
+      "mean_current_uA": 1.354636821337674,
+      "mean_row_dispersion_ratio": 0.29931039352300093,
+      "new_always_wrong_count": 9,
+      "new_always_correct_count": 1
+    },
+    {
+      "group": "other_samples",
+      "sample_count": 286,
+      "mean_current_uA": 1.1757353586769939,
+      "mean_row_dispersion_ratio": 0.30899756779650384,
+      "new_always_wrong_count": 20,
+      "new_always_correct_count": 223
+    }
+  ],
+  "note": "Descriptive association only; this is not evidence of a sensor defect or a mislabeled image."
+}
