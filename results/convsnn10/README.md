@@ -63,4 +63,4 @@ python tools/export_convsnn10_results.py --source-root ORIGINAL_PROJECT
 python -m pytest -q convsnn/tests/test_published_top10.py
 ```
 
-接收者只需下载本目录即可绘图，无需拿到训练数据或重跑模型。仓库为私有，查看 GitHub 链接需要已有访问权限。
+接收者只需下载本目录即可绘图，无需拿到训练数据或重跑模型。仓库为公开，可直接查看 GitHub 链接并下载绘图数据。
