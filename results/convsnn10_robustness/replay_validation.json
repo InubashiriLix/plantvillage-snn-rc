@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "fresh_process": true,
+  "trials": 5,
+  "sigmas": [
+    0,
+    0.01,
+    0.2
+  ],
+  "seeds": [
+    100,
+    101
+  ],
+  "comparison": "All counts, accuracy, macro recall, clipping fractions and entire confusion matrices match exactly; runtime excluded.",
+  "original_protocol_sha256": "0f73851cefa9b670fa8eda36bf0b43560a0f2bca547267cf234e1d3540652960",
+  "replay_protocol_sha256": "3f189707139a1d55ebd0e1f5f09d04fef6201d0ec2d01d20b5dda752e07210c9"
+}
