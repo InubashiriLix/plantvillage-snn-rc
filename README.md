@@ -1,6 +1,6 @@
 # PlantVillage：ConvSNN 与 Reservoir Computing
 
-本公开仓库将两条植物叶片分类路线整合到一个 `main` 分支：端到端训练的卷积脉冲网络，以及固定器件动力学、训练读出的 RC。RC 同时包含模拟实验和九路真实硬件响应的分类器比较。原工程保留在本地；不随仓库分发数据集和大型训练产物，不使用 Git LFS 或 Release。
+本公开仓库将两条植物叶片分类路线整合到一个 `main` 分支：端到端训练的卷积脉冲网络，以及固定器件动力学、训练读出的 RC。RC 同时包含模拟实验和九路真实硬件响应的分类器比较。原工程保留在本地；不随仓库分发数据集和大型训练产物，不使用 Git LFS 或 Release。为复现电导扰动实验，单独提供已核对的 ConvSNN Top10 原模型推理权重。
 
 | 路线与评估集 | 准确率 | 宏召回率 | 说明 |
 |---|---:|---:|---|
@@ -18,6 +18,7 @@ RC10 是筛选后的类别，不能与完整 38 分类直接横向比较；两�
 
 - [convsnn/](convsnn/README.md)：ConvSNN、紧凑 SNN、CNN 参考、器件映射与报告。
 - [SNN 十分类论文绘图数据](results/convsnn10/README.md)：准确率、逐类指标、混淆矩阵和训练曲线，可直接下载用于画图。
+- [SNN 十分类电导扰动鲁棒性与原权重](results/convsnn10_robustness/README.md)：六档扰动、五个噪声种子的推理结果、均值与标准差、可移植原权重及复现脚本。
 - [rc/](rc/README.md)：RC v1–v5、38 类演进、Top10、训练和导出脚本。
 - [九路实测硬件训练与复现](rc/HARDWARE300.md)、[300 样本完整结果与绘图](results/rc10_hardware300/README.md)：数据审计、六类读出模型、嵌套验证与推理入口。
 - [第二轮硬件优化](rc/HARDWARE_REFINEMENT.md)、[改进结果与开发记录](results/rc10_hardware300_v2/README.md)：补充分布特征、神经网络训练与多模型融合，保留各轮完整结果。
@@ -56,4 +57,4 @@ python rc/scripts/08_export_hardware_inputs.py
 
 完整导出在 `artifacts_best10/hardware_export_v1/` 生成每个 split 的 9 路连续、9 路二值、12 路连续 CSV/NPY、标签、样本索引和校验清单。单个训练 CSV 约 213–241 MiB，全部受忽略规则保护。历史成绩作为已有实验记录保存，本次整合验证不重新训练完整数据集。
 
-只维护并上传 `main`。提交文件使用明确路径；数据、权重、状态矩阵、缓存和归档文件均不提交。发布前运行 `python tools/check_repository.py`。
+只维护并上传 `main`。提交文件使用明确路径；数据、训练中间状态、状态矩阵、缓存和归档文件均不提交。权重仅允许经过 SHA-256 固定校验的 `results/convsnn10_robustness/model/checkpoint.pt`。发布前运行 `python tools/check_repository.py`。

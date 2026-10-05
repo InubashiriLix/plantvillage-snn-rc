@@ -1,0 +1,14 @@
+{
+  "format_version": 1,
+  "source_run": "artifacts/hardware_refresh_2026-08-06/final/conv_snn_top10_hw_finetune_seed42",
+  "original_checkpoint_sha256": "0372bb4754c53a1d16ddd8b300c65d7b8efec0a65e07722cacab6d3292623de9",
+  "original_metrics_sha256": "32f11237f7044ae8682033c1fa1b2beb4a29c0fe70c902423f96b407bfe75e16",
+  "export_note": "Original model tensors and G+/G- preserved exactly; inference-only export, no retraining. NumPy arrays converted to tensors; source-root prefixes removed; optimizer/RNG/history omitted.",
+  "expected_accuracy": 0.9384961176951369,
+  "sample_count": 4894,
+  "files_sha256": {
+    "checkpoint.pt": "9d29bc29dcdcb30c1bb3ed32b2872a6fed10af0160594d8ce12dff0dd2aa631e",
+    "test_manifest.json": "fd7a1c40ce83d2c16676edbce984669a066f4b5afadb8e834c8104726b3503d3",
+    "device.csv": "45549596bf531e9dca96ab0067c5667f585b3c57b4feab70e197089a37f646a8"
+  }
+}

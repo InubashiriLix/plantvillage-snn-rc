@@ -1,12 +1,19 @@
 #!/usr/bin/env python3
 """Audit tracked paths, sizes, text secrets/personal paths and Markdown links."""
 from pathlib import Path
+import hashlib
 import re
 import subprocess
 import sys
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
+# Explicitly requested public inference weights. Keep the exception pinned to
+# the audited original model export instead of permitting arbitrary checkpoints.
+PUBLIC_CHECKPOINTS = {
+    'results/convsnn10_robustness/model/checkpoint.pt':
+        '9d29bc29dcdcb30c1bb3ed32b2872a6fed10af0160594d8ce12dff0dd2aa631e',
+}
 
 
 def main():
@@ -25,7 +32,8 @@ def main():
         largest = max(largest, (size, name))
         if size > 50 * 1024**2:
             problems.append(f'file exceeds 50 MiB: {name}')
-        if p.suffix in forbidden or any(part in {'data', '__pycache__', '.pytest_cache', '.venv', 'tmp', 'output', '.agents', '.codex'} or part.startswith('artifacts') for part in Path(name).parts[:-1]):
+        public_checkpoint = name in PUBLIC_CHECKPOINTS and hashlib.sha256(p.read_bytes()).hexdigest() == PUBLIC_CHECKPOINTS[name]
+        if (p.suffix in forbidden and not public_checkpoint) or any(part in {'data', '__pycache__', '.pytest_cache', '.venv', 'tmp', 'output', '.agents', '.codex'} or part.startswith('artifacts') for part in Path(name).parts[:-1]):
             problems.append(f'generated or private file tracked: {name}')
         if re.search(r'_inputs.*\.csv$', name) or p.name == 'samples.csv':
             problems.append(f'complete hardware CSV tracked: {name}')
