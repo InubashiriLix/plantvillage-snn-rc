@@ -18,6 +18,7 @@ RC10 是筛选后的类别，不能与完整 38 分类直接横向比较；两�
 
 - [convsnn/](convsnn/README.md)：ConvSNN、紧凑 SNN、CNN 参考、器件映射与报告。
 - [SNN 十分类论文绘图数据](results/convsnn10/README.md)：准确率、逐类指标、混淆矩阵和训练曲线，可直接下载用于画图。
+- [项目概览与新增评估汇报（Typst / PDF）](reports/project-update/README.md)：六页中文报告，附全新 GitHub 克隆交付核验与复现边界。
 - [SNN 十分类电导扰动鲁棒性与原权重](results/convsnn10_robustness/README.md)：六档扰动、五个噪声种子的推理结果、均值与标准差、可移植原权重及复现脚本。
 - [rc/](rc/README.md)：RC v1–v5、38 类演进、Top10、训练和导出脚本。
 - [九路实测硬件训练与复现](rc/HARDWARE300.md)、[300 样本完整结果与绘图](results/rc10_hardware300/README.md)：数据审计、六类读出模型、嵌套验证与推理入口。

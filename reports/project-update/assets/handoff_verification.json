@@ -1,0 +1,23 @@
+{
+  "verified_commit": "e179579f7a3b6be866fb6a0f64df71012e1a72e3",
+  "fresh_clone": true,
+  "imports_verified_from_clone": true,
+  "dataset_in_clone": false,
+  "published_data_tests": {
+    "passed": 4
+  },
+  "repository_audit": "passed",
+  "plot_regenerated_without_dataset": true,
+  "inference_used_separately_supplied_images": true,
+  "baseline_accuracy": 0.9384961176951369,
+  "baseline_prediction_mismatches": 0,
+  "test_images": 4894,
+  "scope": "The GitHub checkout supplies plotting data, original inference weights and code. Image data and runtime dependencies are external.",
+  "github_actions_run": "https://github.com/InubashiriLix/plantvillage-snn-rc/actions/runs/37325204530",
+  "github_actions_conclusion": "success",
+  "files_sha256": {
+    "summary.csv": "52006d3f4877657b7fd7469d076bace2ad4c8885217e8804aaf707fb71776963",
+    "repeat_metrics.csv": "5702f4d5cb511e2610886d4cdbacb4660e5fe28a3db37c65003008ec3bb90721",
+    "model/checkpoint.pt": "9d29bc29dcdcb30c1bb3ed32b2872a6fed10af0160594d8ce12dff0dd2aa631e"
+  }
+}
