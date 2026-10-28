@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hardware RC · 分层推理控制台</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">RC</div>
+      <div>
+        <h1>Hardware RC <span style="color:var(--muted);font-weight:500">/ 分层推理控制台</span></h1>
+        <p>Dataset → Processing → Hardware response → Decision</p>
+      </div>
+    </div>
+    <div class="status-row" id="status-row">
+      <span class="pill" id="pill-processing"><i class="dot"></i>处理层检测中</span>
+      <span class="pill" id="pill-hardware"><i class="dot"></i>硬件层检测中</span>
+      <span class="pill" id="pill-decision"><i class="dot"></i>决策层检测中</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="card hero-copy">
+      <div class="eyebrow">Measured-current readout / v2 protocol</div>
+      <h2>把处理、器件响应与决策<br><span>拆成可独立替换的三层。</span></h2>
+      <p>处理器只输出 64×9 的归一化驱动信号；硬件层只接收驱动并返回 9×12×65 安培电流；决策层只接收电流并返回类别概率。UI 不参与任何模型计算，只负责编排和展示。</p>
+      <div class="flowline">
+        <span class="flowchip">图像</span><span class="arrow">→</span>
+        <span class="flowchip">8×8 patch / 蛇形扫描</span><span class="arrow">→</span>
+        <span class="flowchip">9 路驱动</span><span class="arrow">→</span>
+        <span class="flowchip">实测电流</span><span class="arrow">→</span>
+        <span class="flowchip">Top-10 决策</span>
+      </div>
+    </div>
+
+    <div class="card source-card">
+      <div class="card-title">
+        <div>
+          <h3>输入源</h3>
+          <p>回放真实录制样本，或上传图片走在线硬件。</p>
+        </div>
+        <span class="badge" style="--stage-color:var(--mint)">SOURCE</span>
+      </div>
+      <div class="source-tabs">
+        <button id="tab-recorded" class="active" type="button">录制样本</button>
+        <button id="tab-upload" type="button">上传图片</button>
+      </div>
+      <div id="recorded-source">
+        <label class="field-label" for="sample-select">实测硬件样本</label>
+        <select id="sample-select"></select>
+        <div style="display:flex;gap:8px;margin-top:10px;color:var(--muted);font-size:11px" id="sample-meta"></div>
+      </div>
+      <div id="upload-source" style="display:none">
+        <label class="field-label">叶片图像 · PNG / JPG</label>
+        <div class="upload-zone" id="drop-zone">
+          <div>
+            <strong>拖入图片，或点击选择</strong>
+            <small>会缩放为 64×64，并生成 9 路驱动信号</small>
+            <img class="upload-preview" id="upload-preview" alt="上传图片预览">
+          </div>
+        </div>
+        <input type="file" id="file-input" accept="image/png,image/jpeg,image/webp" hidden>
+      </div>
+      <div class="run-row">
+        <button class="primary" id="run-button" type="button">运行完整链路</button>
+        <button class="ghost" id="reset-button" type="button">重置</button>
+      </div>
+      <div class="notice" id="notice"></div>
+    </div>
+  </section>
+
+  <section class="stage-grid">
+    <article class="card stage">
+      <div class="stage-head">
+        <div class="stage-index">01</div>
+        <div>
+          <h3>处理层</h3>
+          <p>图像 → 64 帧 × 9 路驱动信号</p>
+        </div>
+        <span class="badge">PROCESSING</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><span>shape</span><strong id="drive-shape">—</strong></div>
+        <div class="metric"><span>steps</span><strong id="drive-steps">—</strong></div>
+        <div class="metric"><span>latency</span><strong id="drive-ms">—</strong></div>
+      </div>
+      <canvas id="drive-canvas" class="drive-canvas" width="900" height="300"></canvas>
+      <div class="legend" id="drive-legend">
+        <span><i style="background:#9ff0b8"></i>RGB absolute level</span>
+        <span><i style="background:#ffc66d"></i>ON event</span>
+        <span><i style="background:#89baff"></i>OFF event</span>
+        <a class="download" id="download-drive" href="#" download="hardware_input.csv">下载 9 路输入 CSV</a>
+      </div>
+      <div class="empty" id="drive-empty">等待输入 · 处理层不会读取标签</div>
+    </article>
+
+    <article class="card stage">
+      <div class="stage-head">
+        <div class="stage-index">02</div>
+        <div>
+          <h3>硬件响应层</h3>
+          <p>驱动信号 → 9 通道 × 12 行 × 65 点电流</p>
+        </div>
+        <span class="badge" id="hardware-badge">NO SIGNAL</span>
+      </div>
+      <div class="channel-tabs" id="channel-tabs"></div>
+      <canvas id="response-canvas" class="response-canvas" width="900" height="320"></canvas>
+      <div class="metrics" style="margin:12px 0 0">
+        <div class="metric"><span>backend</span><strong id="response-backend">—</strong></div>
+        <div class="metric"><span>mean</span><strong id="response-mean">—</strong></div>
+        <div class="metric"><span>points</span><strong>9×12×65</strong></div>
+      </div>
+      <div class="empty" id="response-empty">等待实测电流 · 单位 A</div>
+    </article>
+
+    <article class="card stage">
+      <div class="stage-head">
+        <div class="stage-index">03</div>
+        <div>
+          <h3>决策层</h3>
+          <p>只接收硬件电流，不接触图像与标签</p>
+        </div>
+        <span class="badge" id="decision-badge">WAITING</span>
+      </div>
+      <div class="prediction">
+        <div>
+          <div class="label">predicted class</div>
+          <div class="class-name" id="predicted-class">—</div>
+        </div>
+        <div style="text-align:right">
+          <div class="label">confidence</div>
+          <div class="confidence" id="confidence">—</div>
+        </div>
+      </div>
+      <div class="bars" id="probability-bars">
+        <div class="empty" style="min-height:110px">等待硬件响应与读出模型</div>
+      </div>
+    </article>
+
+    <article class="card stage">
+      <div class="stage-head">
+        <div class="stage-index">04</div>
+        <div>
+          <h3>交付与复现</h3>
+          <p>可分别替换的接口、可下载的中间产物</p>
+        </div>
+        <span class="badge" style="--stage-color:var(--lime)">CONTRACT</span>
+      </div>
+      <div class="metrics" style="grid-template-columns:repeat(2,1fr)">
+        <div class="metric"><span>驱动接口</span><strong>frames [64,9]</strong></div>
+        <div class="metric"><span>响应接口</span><strong>currents [9,12,65]</strong></div>
+      </div>
+      <div style="display:grid;gap:10px;color:var(--muted);font-size:12px;line-height:1.65">
+        <div><b style="color:var(--text)">真实硬件接入：</b>用 <code style="color:var(--amber)">--hardware-url</code> 启动，POST 驱动帧，接收 <code style="color:var(--amber)">currents_amperes</code>。硬件层实现可替换，不影响处理层和决策层。</div>
+        <div><b style="color:var(--text)">离线演示：</b>选择已录制样本，回放真实 9×12×65 电流后交给冻结读出模型。</div>
+        <div><b style="color:var(--text)">单层调用：</b>UI API 也提供 <code>/api/process</code>、<code>/api/decision</code>、<code>/api/decide-csv</code>，可分别集成。</div>
+      </div>
+      <div style="margin-top:auto;padding-top:18px;display:flex;gap:14px;flex-wrap:wrap">
+        <a class="download" href="/api/status" target="_blank">查看层状态 JSON</a>
+        <a class="download" href="/api/samples" target="_blank">查看录制样本 JSON</a>
+      </div>
+    </article>
+  </section>
+
+  <footer class="footer">
+    <span>本地运行 · 无外部 CDN · 模型和原始数据不进入 Git</span>
+    <span id="footer-status">正在连接 <code>/api/status</code></span>
+  </footer>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
