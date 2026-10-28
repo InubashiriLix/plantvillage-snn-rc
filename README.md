@@ -23,6 +23,7 @@ RC10 是筛选后的类别，不能与完整 38 分类直接横向比较；两�
 - [九路实测硬件训练与复现](rc/HARDWARE300.md)、[300 样本完整结果与绘图](results/rc10_hardware300/README.md)：数据审计、六类读出模型、嵌套验证与推理入口。
 - [第二轮硬件优化](rc/HARDWARE_REFINEMENT.md)、[改进结果与开发记录](results/rc10_hardware300_v2/README.md)：补充分布特征、神经网络训练与多模型融合，保留各轮完整结果。
 - [硬件交接示例](rc/hardware_example/README.md)：十类各一张的 640 帧 CSV、标签表及读取规范。
+- [硬件 RC 分层桌面交付说明](docs/HARDWARE_RC_DELIVERY.md)：Tkinter 演示、真实截图、层契约与复现命令。
 - [ConvSNN 报告](convsnn/reports/final/PlantVillage_ConvSNN_Final.zh-CN.pdf)、[RC 报告源文件](rc/reports/main.typ)、[RC 公式说明](rc/note.md)。
 
 以下命令均从仓库根目录执行，Python 3.10+（CI 使用 3.11）。

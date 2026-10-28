@@ -46,3 +46,6 @@ samples.csv
 .agents/
 .codex/
 .DS_Store
+
+# Local release assets and checksums
+release-assets/
